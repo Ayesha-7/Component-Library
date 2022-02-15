@@ -1,0 +1,325 @@
+/******** Spacings - Margins & Paddings ********/
+
+/******** Margins Util Class ********/
+
+/* Magin auto */
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+/* Margin 0 */
+
+.m-0 {
+  margin: 0;
+}
+
+.mx-0 {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+/* Margin 0.125rem */
+
+.m-0125 {
+  margin: 0.125rem;
+}
+
+.mx-0125 {
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+}
+
+.my-0125 {
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+}
+
+.mt-0125 {
+  margin-top: 0.125rem;
+}
+
+.mr-0125 {
+  margin-right: 0.125rem;
+}
+
+.mb-0125 {
+  margin-bottom: 0.125rem;
+}
+
+.ml-0125 {
+  margin-left: 0.125rem;
+}
+
+/* Margin 0.5rem */
+
+.m-05 {
+  margin: 0.5rem;
+}
+
+.mx-05 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.my-05 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mt-05 {
+  margin-top: 0.5rem;
+}
+
+.mr-05 {
+  margin-right: 0.5rem;
+}
+
+.mb-05 {
+  margin-bottom: 0.5rem;
+}
+
+.ml-05 {
+  margin-left: 0.5rem;
+}
+
+/* Margin 1rem */
+
+.m-1 {
+  margin: 1rem;
+}
+
+.mx-1 {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+/* Margin 2rem */
+
+.m-2 {
+  margin: 2rem;
+}
+
+.mx-2 {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+/******* Padding Util Class  ********/
+
+/* Padiing 0 */
+
+.p-0 {
+  padding: 0;
+}
+
+.px-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+/* Padding 0.5rem */
+
+.p-05 {
+  padding: 0.5rem;
+}
+
+.px-05 {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.py-05 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.pt-05 {
+  padding-top: 0.5rem;
+}
+
+.pr-05 {
+  padding-right: 0.5rem;
+}
+
+.pb-05 {
+  padding-bottom: 0.5rem;
+}
+
+.pl-05 {
+  padding-left: 0.5rem;
+}
+
+/* Padding 1rem */
+
+.p-1 {
+  padding: 1rem;
+}
+
+.px-1 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+/* Padding 2rem */
+
+.p-2 {
+  padding: 2rem;
+}
+
+.px-2 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}

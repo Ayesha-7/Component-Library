@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #2667ff;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f7f6;
+
+  /* color variants 1-darkest 6-lightest */
+
+  /* black color variants */
+  --black-1: #1f2937;
+  --black-2: #4b5563;
+  --black-3: #6b7280;
+  --black-4: #9ca3af;
+  --black-5: #d1d5db;
+  --black-6: #e5e7eb;
+
+  /* blue color */
+  --blue-1: #0000ff;
+  --blue-2: #0080ff;
+}
