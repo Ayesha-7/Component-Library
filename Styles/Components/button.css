@@ -1,0 +1,31 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--bg-primary);
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 28%) 0px 4px 10px;
+}
+
+.btn-secondary {
+  color: var(--black-3);
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 28%) 0px 4px 10px;
+}
+
+.btn-primary:hover {
+  background-color: var(--blue-1);
+}
+
+.btn-secondary:hover {
+  background-color: var(--black-6);
+}
