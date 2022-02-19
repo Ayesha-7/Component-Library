@@ -1,0 +1,44 @@
+@import url(../Styles/common.css);
+@import url(../Styles/Components/button.css);
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.main-header {
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgb(40 44 51 / 20%) 0px 4px 4px;
+}
+
+.main-nav-links {
+  display: flex;
+}
+
+.main-container {
+  height: 72vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-section {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-text-container {
+  width: 32vw;
+}
+
+.feature-img {
+  width: 32vw;
+  height: auto;
+}
+
+.footer-container {
+  background: var(--black-6);
+  align-items: center;
+}
