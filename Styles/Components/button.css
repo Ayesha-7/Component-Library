@@ -1,28 +1,51 @@
 .btn {
   background-color: transparent;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
   outline: none;
-  white-space: nowrap;
   padding: 0.75rem 1.5rem;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-link-solid {
   background-color: var(--primary-color);
   color: var(--bg-primary);
-  font-size: 1rem;
   border-radius: 8px;
   box-shadow: rgb(0 0 0 / 28%) 0px 4px 10px;
+}
+
+.btn-link {
+  font-size: 1.5rem;
+  color: var(--blue-1);
+  text-decoration: underline 2px;
+}
+
+.btn-link:hover {
+  color: var(--blue-2);
 }
 
 .btn-secondary {
   color: var(--black-3);
-  font-size: 1rem;
   border-radius: 8px;
   box-shadow: rgb(0 0 0 / 28%) 0px 4px 10px;
 }
 
-.btn-primary:hover {
+.btn-rounded,
+.btn-link-rounded {
+  background-color: var(--primary-color);
+  color: var(--bg-primary);
+  border-radius: 24px;
+  box-shadow: rgb(0 0 0 / 28%) 0px 4px 10px;
+}
+
+.btn-primary:hover,
+.btn-link-solid:hover {
+  background-color: var(--blue-1);
+}
+
+.btn-rounded:hover,
+.btn-link-rounded:hover {
   background-color: var(--blue-1);
 }
 

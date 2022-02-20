@@ -1,0 +1,72 @@
+@import url(../Styles/common.css);
+@import url(../Styles/Components/button.css);
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.main-header {
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 4px rgb(40 44 51 / 20%);
+  z-index: 1;
+}
+
+.main-nav-links {
+  display: flex;
+}
+
+.body-container {
+  margin: 0 4rem;
+  width: 90vw;
+  margin: auto;
+}
+
+.main-side-nav {
+  align-self: center;
+  justify-content: space-around;
+  min-width: 320px;
+  width: 24%;
+}
+
+.main-side-nav h6 {
+  border-bottom: 1px solid var(--black-5);
+  line-height: 0;
+}
+.side-nav-link.active {
+  background: #0084ff34;
+  border-radius: 6px;
+  padding-left: 24px;
+  font-weight: bold;
+}
+
+.side-nav-link:hover {
+  background: #0084ff34;
+  border-radius: 6px;
+  padding-left: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.doc-content {
+  width: 70%;
+}
+
+.component-container {
+  background-color: var(--black-6);
+  border-radius: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-container {
+  background: var(--black-6);
+  align-items: center;
+  box-shadow: 0px -4px 4px rgb(40 44 51 / 20%);
+  z-index: 1;
+}

@@ -14,11 +14,13 @@ h6,
 .h6 {
   line-height: 1.2;
   font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .h1,
 h1 {
   font-size: 3rem;
+  font-weight: bolder;
 }
 
 .h2,
@@ -44,6 +46,12 @@ h5 {
 .h6,
 h6 {
   font-size: 1.25rem;
+}
+
+p {
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 /* Text-alignment */
