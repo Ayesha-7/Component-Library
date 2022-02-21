@@ -26,7 +26,7 @@ body {
 }
 
 .main-side-nav {
-  align-self: center;
+  align-self: flex-start;
   justify-content: space-around;
   min-width: 320px;
   width: 24%;
@@ -53,6 +53,10 @@ body {
 
 .doc-content {
   width: 70%;
+}
+
+.doc-section {
+  margin-top: 4rem;
 }
 
 .component-container {
