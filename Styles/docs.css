@@ -37,14 +37,14 @@ body {
   line-height: 0;
 }
 .side-nav-link.active {
-  background: #0084ff34;
+  background: var(--blue-5);
   border-radius: 6px;
   padding-left: 24px;
   font-weight: bold;
 }
 
 .side-nav-link:hover {
-  background: #0084ff34;
+  background: var(--blue-5);
   border-radius: 6px;
   padding-left: 24px;
   font-weight: bold;
