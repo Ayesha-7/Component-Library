@@ -33,3 +33,15 @@ a {
   text-decoration: none;
   color: var(--black-1);
 }
+
+i.fa-1 {
+  font-size: 1.75rem;
+}
+
+i.fa-2 {
+  font-size: 1.5rem;
+}
+
+i.fa-3 {
+  font-size: 1.25rem;
+}
