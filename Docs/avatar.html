@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Buttons | AceUI</title>
+    <title>Avatar | AceUI</title>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +16,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../Styles/docs.css" />
-    <link rel="stylesheet" href="../Styles/Components/button.css" />
+    <link rel="stylesheet" href="../Styles/Components/avatar.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -79,13 +79,13 @@
               <h6 class="py-1">Components</h6>
             </li>
             <ul>
-              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
                 <a href="../Docs/avatar.html">
                   Avatar
                 </a>
               </li>
               <li class="side-nav-link my-1 mx-1 px-2 py-05">
-                <a href="../Docs/alert.html">
+                <a href="#">
                   Alert
                 </a>
               </li>
@@ -94,7 +94,7 @@
                   Badge
                 </a>
               </li>
-              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
                 <a href="../Docs/button.html">
                   Button
                 </a>
@@ -121,137 +121,129 @@
 
       <!-- main content -->
       <div class="doc-content m-2">
-        <h1 class="mb-2">Button</h1>
+        <h1 class="mb-2">Avatar</h1>
         <div>
           <p>
-            Buttons are an important component of any website. They allow users
-            to interact with the site. Ace your buttons with AceUI. AceUI
-            provides variety of buttons which you can easily use in your website
-            and web apps.
+            An Avatar is a visual way to represent a person or brand in the
+            product. They can display text, icons, or images. Ace your Avatars
+            with AceUI! Follow the guide below to make avatar of your choice.
           </p>
         </div>
 
-        <!--Primary Button-->
+        <!--Round Avatar-->
 
         <section class="doc-section">
-          <h3 class="mb-1">Primary Button</h3>
+          <h3 class="mb-1">Round Avatar</h3>
           <div>
             <p>
-              The primary button, contain actions that are primary to your
-              website. Add class btn and btn-primary to make primary button.
+              You can make round image avatar by adding class avatar-round to
+              your avatar image.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <button class="btn btn-primary">Primary</button>
-            <button class="btn btn-primary">Sign In</button>
-            <button class="btn btn-primary btn-round">Primary</button>
+            <img
+              class="avatar-round"
+              src="../assets/images/olaf.jpg"
+              alt="avatar"
+            />
+            <img
+              class="avatar-round"
+              src="../assets/images/HTTYD.jpg"
+              alt="avatar"
+            />
+            <img
+              class="avatar-round"
+              src="../assets/images/baymax.jpeg"
+              alt="avatar"
+            />
           </div>
           <div>
-            <script src="https://gist.github.com/Ayesha-7/d417f1d5869335b8d870ebe6593524e6.js"></script>
+            <script src="https://gist.github.com/Ayesha-7/f9d2ae59ad5bcfce14fa8a84845e0214.js"></script>
           </div>
         </section>
 
-        <!--Outline Button-->
+        <!--Square Avatar-->
 
         <section class="doc-section">
-          <h3 class="mb-1">Outline Button</h3>
+          <h3 class="mb-1">Square Avatar</h3>
           <div>
             <p>
-              Just add classes as shown in example below and make Outline
-              buttons in no time!
+              Just add class avatar-square to image tag to make Square avatar.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <button class="btn btn-outline">Outline</button>
-            <button class="btn btn-outline">Cancel</button>
+            <img
+              class="avatar-square"
+              src="../assets/images/olaf.jpg"
+              alt="avatar"
+            />
+            <img
+              class="avatar-square"
+              src="../assets/images/HTTYD.jpg"
+              alt="avatar"
+            />
+            <img
+              class="avatar-square"
+              src="../assets/images/baymax.jpeg"
+              alt="avatar"
+            />
           </div>
           <div>
-            <script src="https://gist.github.com/Ayesha-7/b5f5dd76f38e3dbe3a88b52902dd8619.js"></script>
+            <script src="https://gist.github.com/Ayesha-7/546b09bd5a16062c45a2d22eb54560c7.js"></script>
           </div>
         </section>
 
-        <!--Link Button-->
+        <!--Text Avatar-->
 
         <section class="doc-section">
-          <h3 class="mb-1">Link Button</h3>
+          <h3 class="mb-1">Text Avatar</h3>
           <div>
             <p>
-              Use classes as shown below and make Link buttons in no time!
+              Just add class avatar-text to make Text avatar.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <a href="#" role="button" class="btn btn-link">Link</a>
-            <a href="#" role="button" class="btn btn-link-solid">Link</a>
+            <div class="avatar-text"><span>AA</span></div>
+            <div class="avatar-text"><span>AS</span></div>
+            <div class="avatar-text"><span>AB</span></div>
           </div>
           <div>
-            <script src="https://gist.github.com/Ayesha-7/ae8265f0458872d7a128bd9ee1a3c6e5.js"></script>
+            <script src="https://gist.github.com/Ayesha-7/2db64fd9d1e8082de98bbe77149a363b.js"></script>
           </div>
         </section>
 
-        <!--Icon Button-->
+        <!--Avatar Size-->
 
         <section class="doc-section">
-          <h3 class="mb-1">Icon Button</h3>
+          <h3 class="mb-1">Avatar Size</h3>
           <div>
             <p>
-              Use classes as shown below in example and make Icon buttons.
+              AceUI provides avatar of four size - large, medium, small,
+              extra-small. Use class avatar-lg, avatar-md, avatar-sm and
+              avatar-xs along with avatar-round, avatar-square or avatar-text to
+              make avatar of respective size.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <button class="btn btn-icon">
-              <img src="../assets/images/heart.png" alt="like" />
-            </button>
-            <button class="btn btn-icon-label">
-              <img src="../assets/images/share.png" alt="share" />
-              <div>Share</div>
-            </button>
+            <img
+              class="avatar-square avatar-lg"
+              src="../assets/images/olaf.jpg"
+              alt="avatar"
+            />
+            <img
+              class="avatar-round avatar-md"
+              src="../assets/images/olaf.jpg"
+              alt="avatar"
+            />
+            <img
+              class="avatar-square avatar-sm"
+              src="../assets/images/olaf.jpg"
+              alt="avatar"
+            />
+            <div class="avatar-text avatar-xs"><span>AB</span></div>
           </div>
           <div>
-            <script src="https://gist.github.com/Ayesha-7/ee61460ddad6495931e167345c41772b.js"></script>
-          </div>
-        </section>
-
-        <!--Floating Action Button-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Floating Action Button</h3>
-          <div>
-            <p>
-              Just add classes as shown below and make Floating action buttons
-              in no time!
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <button class="btn btn-fab">
-              <img src="../assets/images/plus.png" alt="add" />
-            </button>
-            <button class="btn btn-fab">
-              <img src="../assets/images/pencil.png" alt="edit" />
-            </button>
-          </div>
-          <div>
-            <script src="https://gist.github.com/Ayesha-7/7cb7ecea17d87bc721be5a36ea8127bb.js"></script>
-          </div>
-        </section>
-
-        <!--Round Button-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Round Button</h3>
-          <div>
-            <p>
-              Add class btn-round to button tag to make Round buttons.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <button class="btn btn-primary btn-round">Primary</button>
-            <button class="btn btn-outline btn-round">Outline</button>
-            <a href="#" role="button" class="btn btn-link-solid btn-round">
-              Link
-            </a>
-          </div>
-          <div>
-            <script src="https://gist.github.com/Ayesha-7/c21f93165dd6fb693d319a5f338abf30.js"></script>
+            <script src="https://gist.github.com/Ayesha-7/d75831e5d28a029d67e97f035f528035.js"></script>
           </div>
         </section>
       </div>
