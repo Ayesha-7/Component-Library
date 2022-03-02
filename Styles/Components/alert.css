@@ -51,7 +51,9 @@
   height: 1rem;
   position: absolute;
   right: 1rem;
+  cursor: pointer;
 }
+
 /* color variants */
 /* dark */
 
