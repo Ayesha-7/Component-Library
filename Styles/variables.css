@@ -3,6 +3,13 @@
   --bg-primary: #ffffff;
   --bg-secondary: #f4f7f6;
 
+  /* variables for margin, padding, spaces */
+  --sp-05: 0.5rem;
+  --sp-075: 0.75rem;
+  --sp-1: 1rem;
+  --sp-15: 1.5rem;
+  --sp-2: 2rem;
+
   /* color variants 1-darkest 6-lightest */
 
   /* black color variants */

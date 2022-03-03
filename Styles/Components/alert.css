@@ -2,7 +2,7 @@
   border: transparent 1px solid;
   border-radius: 8px;
   width: 70%;
-  padding: 0.75rem;
+  padding: var(--sp-075);
   font-size: 1.2rem;
 }
 
@@ -35,7 +35,7 @@
 .alert-icon .icon {
   width: 1.5rem;
   height: 1.5rem;
-  margin-right: 0.5rem;
+  margin-right: var(--sp-05);
 }
 
 .alert-dismiss {
@@ -50,7 +50,7 @@
   width: 1rem;
   height: 1rem;
   position: absolute;
-  right: 1rem;
+  right: var(--sp-1);
   cursor: pointer;
 }
 
