@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Buttons | AceUI</title>
+    <title>Alert | AceUI</title>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +16,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../Styles/docs.css" />
-    <link rel="stylesheet" href="../Styles/Components/button.css" />
+    <link rel="stylesheet" href="../Styles/Components/alert.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -84,7 +84,7 @@
                   Avatar
                 </a>
               </li>
-              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
                 <a href="../Docs/alert.html">
                   Alert
                 </a>
@@ -94,7 +94,7 @@
                   Badge
                 </a>
               </li>
-              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
                 <a href="../Docs/button.html">
                   Button
                 </a>
@@ -121,137 +121,169 @@
 
       <!-- main content -->
       <div class="doc-content m-2">
-        <h1 class="mb-2">Button</h1>
+        <h1 class="mb-2">Alert</h1>
         <div>
           <p>
-            Buttons are an important component of any website. They allow users
-            to interact with the site. Ace your buttons with AceUI. AceUI
-            provides variety of buttons which you can easily use in your website
-            and web apps.
+            An alert displays a short, important message in a way that attracts
+            the user's attention without interrupting the user's task. Alerting
+            makes it possible for people to keep up with the information that
+            matters most to them.
           </p>
         </div>
 
-        <!--Primary Button-->
+        <!--Simple Alert-->
 
         <section class="doc-section">
-          <h3 class="mb-1">Primary Button</h3>
+          <h3 class="mb-1">Simple Alert</h3>
           <div>
             <p>
-              The primary button, contain actions that are primary to your
-              website. Add class btn and btn-primary to make primary button.
+              For simple alert with short message, use class alert with
+              alert-variant. AceUI provides four alert variants - info, success,
+              warning and error. Refer examples below to use alert in your
+              project.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <button class="btn btn-primary">Primary</button>
-            <button class="btn btn-primary">Sign In</button>
-            <button class="btn btn-primary btn-round">Primary</button>
+            <div class="alert alert-info my-05">
+              This is a info alert—check it out!
+            </div>
+            <div class="alert alert-success my-05">
+              This is a success alert—check it out!
+            </div>
+            <div class="alert alert-warning my-05">
+              This is a warning alert—check it out!
+            </div>
+            <div class="alert alert-error my-05">
+              This is a danger alert—check it out!
+            </div>
           </div>
           <div>
-            <script src="https://gist.github.com/Ayesha-7/d417f1d5869335b8d870ebe6593524e6.js"></script>
+            <script src="https://gist.github.com/Ayesha-7/826fd9d106fddc6b42be398cec77ddd2.js"></script>
           </div>
         </section>
 
-        <!--Outline Button-->
+        <!--Alert with icon-->
 
         <section class="doc-section">
-          <h3 class="mb-1">Outline Button</h3>
+          <h3 class="mb-1">Alert with Icon</h3>
           <div>
             <p>
-              Just add classes as shown in example below and make Outline
-              buttons in no time!
+              Use classes alert & alert-icon to create alert with icons. Refer
+              the example given below.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <button class="btn btn-outline">Outline</button>
-            <button class="btn btn-outline">Cancel</button>
+            <div class="alert alert-info alert-icon my-05">
+              <img class="icon" src="../assets/images/info-button.png" />
+              <span>This is a info alert—check it out!</span>
+            </div>
+            <div class="alert alert-success alert-icon my-05">
+              <img class="icon" src="../assets/images/checked.png" />
+              <span>This is a success alert—check it out!</span>
+            </div>
+            <div class="alert alert-warning alert-icon my-05">
+              <img class="icon" src="../assets/images/warning.png" />
+              <span>This is a warning alert—check it out!</span>
+            </div>
+            <div class="alert alert-error alert-icon my-05">
+              <img class="icon" src="../assets/images/cross-sign.png" />
+              <span>This is a danger alert—check it out!</span>
+            </div>
           </div>
           <div>
-            <script src="https://gist.github.com/Ayesha-7/b5f5dd76f38e3dbe3a88b52902dd8619.js"></script>
+            <script src="https://gist.github.com/Ayesha-7/049326a383d1b1fffaf3ed63b3dbc125.js"></script>
           </div>
         </section>
 
-        <!--Link Button-->
+        <!--Alert with dismiss-->
 
         <section class="doc-section">
-          <h3 class="mb-1">Link Button</h3>
+          <h3 class="mb-1">Alert with Dismiss</h3>
           <div>
             <p>
-              Use classes as shown below and make Link buttons in no time!
+              Alert with dismiss have close button which allow users to close/
+              remove the alert.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <a href="#" role="button" class="btn btn-link">Link</a>
-            <a href="#" role="button" class="btn btn-link-solid">Link</a>
+            <div class="alert alert-info alert-dismiss my-05">
+              <span>This is a info alert—check it out!</span>
+              <img class="close" src="../assets/images/cancel.png" />
+            </div>
+            <div class="alert alert-success alert-icon alert-dismiss my-05">
+              <img class="icon" src="../assets/images/checked.png" />
+              <span>This is a success alert—check it out!</span>
+              <img class="close" src="../assets/images/cancel.png" />
+            </div>
+            <div class="alert alert-warning alert-dismiss my-05">
+              <span>This is a warning alert—check it out!</span>
+              <img class="close" src="../assets/images/cancel.png" />
+            </div>
+            <div class="alert alert-error alert-dismiss my-05">
+              <span>This is a danger alert—check it out!</span>
+              <img class="close" src="../assets/images/cancel.png" />
+            </div>
           </div>
           <div>
-            <script src="https://gist.github.com/Ayesha-7/ae8265f0458872d7a128bd9ee1a3c6e5.js"></script>
+            <script src="https://gist.github.com/Ayesha-7/724c1c95720dcb74b2787230f815aaed.js"></script>
           </div>
         </section>
 
-        <!--Icon Button-->
+        <!--Alert Dark-->
 
         <section class="doc-section">
-          <h3 class="mb-1">Icon Button</h3>
+          <h3 class="mb-1">Alert Color - Dark</h3>
           <div>
             <p>
-              Use classes as shown below in example and make Icon buttons.
+              To make alerts of darker color use class alert-dark.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <button class="btn btn-icon">
-              <img src="../assets/images/heart.png" alt="like" />
-            </button>
-            <button class="btn btn-icon-label">
-              <img src="../assets/images/share.png" alt="share" />
-              <div>Share</div>
-            </button>
+            <div class="alert alert-info alert-dark my-05">
+              This is a info alert—check it out!
+            </div>
+            <div class="alert alert-success alert-icon alert-dark my-05">
+              <img class="icon" src="../assets/images/checked.png" />
+              <span>This is a success alert—check it out!</span>
+            </div>
+            <div class="alert alert-warning alert-dark my-05">
+              This is a warning alert—check it out!
+            </div>
+            <div class="alert alert-error alert-dark my-05">
+              This is a danger alert—check it out!
+            </div>
           </div>
           <div>
-            <script src="https://gist.github.com/Ayesha-7/ee61460ddad6495931e167345c41772b.js"></script>
+            <script src="https://gist.github.com/Ayesha-7/ad5605dd0d2e21b20a102df9961d9b05.js"></script>
           </div>
         </section>
 
-        <!--Floating Action Button-->
+        <!--Alert Light-->
 
         <section class="doc-section">
-          <h3 class="mb-1">Floating Action Button</h3>
+          <h3 class="mb-1">Alert Color - Light</h3>
           <div>
             <p>
-              Just add classes as shown below and make Floating action buttons
-              in no time!
+              To make alerts of lighter color use class alert-light.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <button class="btn btn-fab">
-              <img src="../assets/images/plus.png" alt="add" />
-            </button>
-            <button class="btn btn-fab">
-              <img src="../assets/images/pencil.png" alt="edit" />
-            </button>
+            <div class="alert alert-info alert-light my-05">
+              This is a info alert—check it out!
+            </div>
+            <div class="alert alert-success alert-icon alert-light my-05">
+              <img class="icon" src="../assets/images/checked.png" />
+              <span>This is a success alert—check it out!</span>
+            </div>
+            <div class="alert alert-warning alert-light my-05">
+              This is a warning alert—check it out!
+            </div>
+            <div class="alert alert-error alert-light my-05">
+              This is a danger alert—check it out!
+            </div>
           </div>
           <div>
-            <script src="https://gist.github.com/Ayesha-7/7cb7ecea17d87bc721be5a36ea8127bb.js"></script>
-          </div>
-        </section>
-
-        <!--Round Button-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Round Button</h3>
-          <div>
-            <p>
-              Add class btn-round to button tag to make Round buttons.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <button class="btn btn-primary btn-round">Primary</button>
-            <button class="btn btn-outline btn-round">Outline</button>
-            <a href="#" role="button" class="btn btn-link-solid btn-round">
-              Link
-            </a>
-          </div>
-          <div>
-            <script src="https://gist.github.com/Ayesha-7/c21f93165dd6fb693d319a5f338abf30.js"></script>
+            <script src="https://gist.github.com/Ayesha-7/ffe91cf186e3d8afb31b3d43d9c6f276.js"></script>
           </div>
         </section>
       </div>
