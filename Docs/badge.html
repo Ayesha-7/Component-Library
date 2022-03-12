@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Buttons | AceUI</title>
+    <title>Badge | AceUI</title>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +16,10 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../Styles/docs.css" />
+    <link rel="stylesheet" href="../Styles/Components/avatar.css" />
+    <link rel="stylesheet" href="../Styles/Components/badge.css" />
     <link rel="stylesheet" href="../Styles/Components/button.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,6 +27,7 @@
   </head>
   <body class="flex-column">
     <!------ Main Header ------>
+
     <header class="main-header flex-row">
       <div class="main-header-logo mx-2 my-05">
         <a href="#">
@@ -57,6 +61,7 @@
 
     <main class="body-container flex-row">
       <!--Side Nav-->
+
       <aside class="main-side-nav flex-column">
         <nav class="m-2">
           <ul>
@@ -89,12 +94,12 @@
                   Alert
                 </a>
               </li>
-              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
                 <a href="../Docs/badge.html">
                   Badge
                 </a>
               </li>
-              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
                 <a href="../Docs/button.html">
                   Button
                 </a>
@@ -120,142 +125,150 @@
       </aside>
 
       <!-- main content -->
+
       <div class="doc-content m-2">
-        <h1 class="mb-2">Button</h1>
+        <h1 class="mb-2">Badge</h1>
         <div>
           <p>
-            Buttons are an important component of any website. They allow users
-            to interact with the site. Ace your buttons with AceUI. AceUI
-            provides variety of buttons which you can easily use in your website
-            and web apps.
+            Badge is a small circle, positioned either at top or bottom of the
+            parent component. Badges are used to display for example - online /
+            offline status of the user or number of notifications.
           </p>
         </div>
 
-        <!--Primary Button-->
+        <!-- Badge on Avatar -->
 
         <section class="doc-section">
-          <h3 class="mb-1">Primary Button</h3>
+          <h3 class="mb-1">Badge on Avatar</h3>
           <div>
             <p>
-              The primary button, contain actions that are primary to your
-              website. Add class btn and btn-primary to make primary button.
+              Badge on Avatars are used to display user's activity status like -
+              online, offline. A number badge can also be used with Avatar.
+              Refer the example below.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <button class="btn btn-primary">Primary</button>
-            <button class="btn btn-primary">Sign In</button>
-            <button class="btn btn-primary btn-round">Primary</button>
+            <div class="badge">
+              <img
+                class="avatar-round avatar-lg"
+                src="../assets/images/avatar/olaf.jpg"
+                alt="avatar"
+              />
+              <div class="online top-right badge-lg"></div>
+            </div>
+
+            <div class="badge">
+              <img
+                class="avatar-round"
+                src="../assets/images/avatar/HTTYD.jpg"
+                alt="avatar"
+              />
+              <div class="offline bottom-right"></div>
+            </div>
+
+            <div class="badge">
+              <img
+                class="avatar-round"
+                src="../assets/images/avatar/baymax.jpeg"
+                alt="avatar"
+              />
+              <div class="number top-right">5+</div>
+            </div>
           </div>
           <div>
-            <script src="https://gist.github.com/Ayesha-7/d417f1d5869335b8d870ebe6593524e6.js"></script>
+            <script src="https://gist.github.com/Ayesha-7/97ecfc78b5fc57c4a19fea5b611bc40c.js"></script>
           </div>
         </section>
 
-        <!--Outline Button-->
+        <!-- Badge on Icon -->
 
         <section class="doc-section">
-          <h3 class="mb-1">Outline Button</h3>
+          <h3 class="mb-1">Badge on Icon</h3>
           <div>
             <p>
-              Just add classes as shown in example below and make Outline
-              buttons in no time!
+              Number badge is used on Icons to display count, for example -
+              number of notifications, items in cart etc.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <button class="btn btn-outline">Outline</button>
-            <button class="btn btn-outline">Cancel</button>
+            <div class="badge">
+              <img
+                src="../assets/images/badge/bell.png"
+                class="icon"
+                alt="icon"
+              />
+              <div class="number top-right">10</div>
+            </div>
+
+            <div class="badge">
+              <img
+                src="../assets/images/badge/email.png"
+                class="icon"
+                alt="icon"
+              />
+              <div class="number top-right">5+</div>
+            </div>
+
+            <div class="badge">
+              <img
+                src="../assets/images/badge/shopping-cart.png"
+                class="icon"
+                alt="icon"
+              />
+              <div class="number top-right">14</div>
+            </div>
           </div>
           <div>
-            <script src="https://gist.github.com/Ayesha-7/b5f5dd76f38e3dbe3a88b52902dd8619.js"></script>
+            <script src="https://gist.github.com/Ayesha-7/d46bdda606a4246f21334f3a06be3efd.js"></script>
           </div>
         </section>
 
-        <!--Link Button-->
+        <!-- Badge Size -->
 
         <section class="doc-section">
-          <h3 class="mb-1">Link Button</h3>
+          <h3 class="mb-1">Badge Size</h3>
           <div>
             <p>
-              Use classes as shown below and make Link buttons in no time!
+              AceUI provides badge of three sizes - large, medium and small. Use
+              class 'badge-lg', 'badge-md', 'badge-sm' for badge of respective
+              size.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <a href="#" role="button" class="btn btn-link">Link</a>
-            <a href="#" role="button" class="btn btn-link-solid">Link</a>
-          </div>
-          <div>
-            <script src="https://gist.github.com/Ayesha-7/ae8265f0458872d7a128bd9ee1a3c6e5.js"></script>
-          </div>
-        </section>
+            <div class="badge">
+              <img
+                class="avatar-round avatar-lg"
+                src="../assets/images/avatar/olaf.jpg"
+                alt="avatar"
+              />
+              <div class="online top-right badge-lg"></div>
+            </div>
 
-        <!--Icon Button-->
+            <div class="badge">
+              <img
+                class="avatar-square avatar-md"
+                src="../assets/images/avatar/HTTYD.jpg"
+                alt="avatar"
+              />
+              <div class="offline bottom-right badge-md"></div>
+            </div>
 
-        <section class="doc-section">
-          <h3 class="mb-1">Icon Button</h3>
-          <div>
-            <p>
-              Use classes as shown below in example and make Icon buttons.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <button class="btn btn-icon">
-              <img src="../assets/images/button/heart.png" alt="like" />
-            </button>
-            <button class="btn btn-icon-label">
-              <img src="../assets/images/button/share.png" alt="share" />
-              <div>Share</div>
-            </button>
+            <div class="badge">
+              <img
+                class="avatar-round avatar-sm"
+                src="../assets/images/avatar/baymax.jpeg"
+                alt="avatar"
+              />
+              <div class="online bottom-right badge-sm"></div>
+            </div>
           </div>
           <div>
-            <script src="https://gist.github.com/Ayesha-7/ee61460ddad6495931e167345c41772b.js"></script>
-          </div>
-        </section>
-
-        <!--Floating Action Button-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Floating Action Button</h3>
-          <div>
-            <p>
-              Just add classes as shown below and make Floating action buttons
-              in no time!
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <button class="btn btn-fab">
-              <img src="../assets/images/button/plus.png" alt="add" />
-            </button>
-            <button class="btn btn-fab">
-              <img src="../assets/images/button/pencil.png" alt="edit" />
-            </button>
-          </div>
-          <div>
-            <script src="https://gist.github.com/Ayesha-7/7cb7ecea17d87bc721be5a36ea8127bb.js"></script>
-          </div>
-        </section>
-
-        <!--Round Button-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Round Button</h3>
-          <div>
-            <p>
-              Add class btn-round to button tag to make Round buttons.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <button class="btn btn-primary btn-round">Primary</button>
-            <button class="btn btn-outline btn-round">Outline</button>
-            <a href="#" role="button" class="btn btn-link-solid btn-round">
-              Link
-            </a>
-          </div>
-          <div>
-            <script src="https://gist.github.com/Ayesha-7/c21f93165dd6fb693d319a5f338abf30.js"></script>
+            <script src="https://gist.github.com/Ayesha-7/9aa942074a98cb72ab84c035b8738d1b.js"></script>
           </div>
         </section>
       </div>
     </main>
+
     <!------ Footer ------>
 
     <footer class="footer-container flex-column">

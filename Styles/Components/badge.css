@@ -1,0 +1,82 @@
+.badge {
+  position: relative;
+}
+
+.badge .online {
+  background: var(--green-1);
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.badge .offline {
+  background: var(--red-1);
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.badge .number {
+  background: var(--blue-3);
+  border-radius: 50%;
+  position: absolute;
+  padding: 4px 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.badge .badge-lg {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.badge .badge-md {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.badge .badge-sm {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.number.badge-lg {
+  font-size: 1.5rem;
+}
+
+.number.badge-md {
+  font-size: 1.2rem;
+}
+
+.number.badge-sm {
+  font-size: 0.75rem;
+}
+
+.badge .top-left {
+  top: 0;
+  left: 0;
+}
+
+.badge .top-right {
+  top: 0;
+  right: 0;
+}
+
+.badge .bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.badge .bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.badge > .icon {
+  height: 2.75rem;
+  width: 3rem;
+}
