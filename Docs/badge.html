@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Badge | AceUI</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../Styles/docs.css" />
+    <link rel="stylesheet" href="../Styles/Components/avatar.css" />
+    <link rel="stylesheet" href="../Styles/Components/badge.css" />
+    <link rel="stylesheet" href="../Styles/Components/button.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="flex-column">
+    <!------ Main Header ------>
+
+    <header class="main-header flex-row">
+      <div class="main-header-logo mx-2 my-05">
+        <a href="#">
+          <h2 class="text-bolder">ace.</h2>
+        </a>
+      </div>
+      <nav class="main-nav mx-2">
+        <ul class="main-nav-links">
+          <li class="main-nav-link px-1">
+            <h6 class="text-bold">
+              <a href="./Docs/button.html">
+                Docs<i class="fa fa-file fa-3 px-05"></i>
+              </a>
+            </h6>
+          </li>
+          <li class="main-nav-link px-1">
+            <h6 class="text-bold">
+              <a href="https://github.com/Ayesha-7/Component-Library">
+                Github<i class="fa fa-github fa-2 px-05"></i>
+              </a>
+            </h6>
+          </li>
+          <li>
+            <h6><a>🌜</a></h6>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!------ Body Content ------>
+
+    <main class="body-container flex-row">
+      <!--Side Nav-->
+
+      <aside class="main-side-nav flex-column">
+        <nav class="m-2">
+          <ul>
+            <li class="m-05">
+              <h6 class="py-1">Get Started 👩‍💻</h6>
+            </li>
+            <ul>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="#">
+                  Installation
+                </a>
+              </li>
+              <li class="side-nav-link side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="#">
+                  Colors
+                </a>
+              </li>
+            </ul>
+            <li class="m-05">
+              <h6 class="py-1">Components</h6>
+            </li>
+            <ul>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/avatar.html">
+                  Avatar
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/alert.html">
+                  Alert
+                </a>
+              </li>
+              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+                <a href="../Docs/badge.html">
+                  Badge
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/button.html">
+                  Button
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/card.html">
+                  Card
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/image.html">
+                  Image
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/input.html">
+                  Input
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- main content -->
+
+      <div class="doc-content m-2">
+        <h1 class="mb-2">Badge</h1>
+        <div>
+          <p>
+            Badge is a small circle, positioned either at top or bottom of the
+            parent component. Badges are used to display for example - online /
+            offline status of the user or number of notifications.
+          </p>
+        </div>
+
+        <!-- Badge on Avatar -->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Badge on Avatar</h3>
+          <div>
+            <p>
+              Badge on Avatars are used to display user's activity status like -
+              online, offline. A number badge can also be used with Avatar.
+              Refer the example below.
+            </p>
+          </div>
+          <div class="component-container my-2 p-2">
+            <div class="badge">
+              <img
+                class="avatar-round avatar-lg"
+                src="../assets/images/avatar/olaf.jpg"
+                alt="avatar"
+              />
+              <div class="online top-right badge-lg"></div>
+            </div>
+
+            <div class="badge">
+              <img
+                class="avatar-round"
+                src="../assets/images/avatar/HTTYD.jpg"
+                alt="avatar"
+              />
+              <div class="offline bottom-right"></div>
+            </div>
+
+            <div class="badge">
+              <img
+                class="avatar-round"
+                src="../assets/images/avatar/baymax.jpeg"
+                alt="avatar"
+              />
+              <div class="number top-right">5+</div>
+            </div>
+          </div>
+          <div>
+            <script src="https://gist.github.com/Ayesha-7/97ecfc78b5fc57c4a19fea5b611bc40c.js"></script>
+          </div>
+        </section>
+
+        <!-- Badge on Icon -->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Badge on Icon</h3>
+          <div>
+            <p>
+              Number badge is used on Icons to display count, for example -
+              number of notifications, items in cart etc.
+            </p>
+          </div>
+          <div class="component-container my-2 p-2">
+            <div class="badge">
+              <img
+                src="../assets/images/badge/bell.png"
+                class="icon"
+                alt="icon"
+              />
+              <div class="number top-right">10</div>
+            </div>
+
+            <div class="badge">
+              <img
+                src="../assets/images/badge/email.png"
+                class="icon"
+                alt="icon"
+              />
+              <div class="number top-right">5+</div>
+            </div>
+
+            <div class="badge">
+              <img
+                src="../assets/images/badge/shopping-cart.png"
+                class="icon"
+                alt="icon"
+              />
+              <div class="number top-right">14</div>
+            </div>
+          </div>
+          <div>
+            <script src="https://gist.github.com/Ayesha-7/d46bdda606a4246f21334f3a06be3efd.js"></script>
+          </div>
+        </section>
+
+        <!-- Badge Size -->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Badge Size</h3>
+          <div>
+            <p>
+              AceUI provides badge of three sizes - large, medium and small. Use
+              class 'badge-lg', 'badge-md', 'badge-sm' for badge of respective
+              size.
+            </p>
+          </div>
+          <div class="component-container my-2 p-2">
+            <div class="badge">
+              <img
+                class="avatar-round avatar-lg"
+                src="../assets/images/avatar/olaf.jpg"
+                alt="avatar"
+              />
+              <div class="online top-right badge-lg"></div>
+            </div>
+
+            <div class="badge">
+              <img
+                class="avatar-square avatar-md"
+                src="../assets/images/avatar/HTTYD.jpg"
+                alt="avatar"
+              />
+              <div class="offline bottom-right badge-md"></div>
+            </div>
+
+            <div class="badge">
+              <img
+                class="avatar-round avatar-sm"
+                src="../assets/images/avatar/baymax.jpeg"
+                alt="avatar"
+              />
+              <div class="online bottom-right badge-sm"></div>
+            </div>
+          </div>
+          <div>
+            <script src="https://gist.github.com/Ayesha-7/9aa942074a98cb72ab84c035b8738d1b.js"></script>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!------ Footer ------>
+
+    <footer class="footer-container flex-column">
+      <div class="footer-social mx-05 mt-05">
+        <ul class="footer-social-links flex-row">
+          <li>
+            <a href="https://github.com/Ayesha-7/" target="blank">
+              <i class="fa fa-github fa-1 mx-1"></i>
+            </a>
+          </li>
+          <li>
+            <a href=" www.linkedin.com/in/ayeshashaikh7" target="blank">
+              <i class="fa fa-linkedin fa-1 mx-1"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/_ayesha_7" target="blank">
+              <i class="fa fa-twitter fa-1 mx-1"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="m-05">
+        <h6>© | Made with 💛 by Ayesha | 2022</h6>
+      </div>
+    </footer>
+  </body>
+</html>
