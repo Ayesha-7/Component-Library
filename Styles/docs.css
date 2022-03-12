@@ -9,10 +9,13 @@ body {
 }
 
 .main-header {
+  background-color: var(--bg-primary);
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 4px 4px rgb(40 44 51 / 20%);
   z-index: 1;
+  position: fixed;
+  width: 100%;
 }
 
 .main-nav-links {
@@ -23,13 +26,15 @@ body {
   margin: 0 4rem;
   width: 90vw;
   margin: auto;
+  margin-top: 4rem;
 }
 
 .main-side-nav {
   align-self: flex-start;
   justify-content: space-around;
-  min-width: 320px;
-  width: 24%;
+  min-width: 304px;
+  width: 18%;
+  position: fixed;
 }
 
 .main-side-nav h6 {
@@ -56,7 +61,9 @@ body {
 }
 
 .doc-content {
+  min-width: 512px;
   width: 70%;
+  margin-left: 22rem;
 }
 
 .doc-section {
