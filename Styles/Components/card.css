@@ -1,6 +1,16 @@
 .card-container {
   width: 50%;
 }
+
+.card-vertical-container {
+  width: 30%;
+}
+
+.card-horizontal-container {
+  width: 50%;
+  margin: 2rem;
+}
+
 .card {
   color: var(--black-1);
   background: var(--bg-primary);
@@ -9,10 +19,91 @@
   border-radius: 4px;
 }
 
-.card-title {
-  margin-bottom: 1rem;
+.card .card-title {
+  margin-bottom: var(--sp-025);
 }
 
-.card:hover {
+.card-vertical {
+  color: var(--black-1);
+  background: var(--bg-primary);
+  width: 100%;
+  border-radius: 4px;
+}
+
+.card-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--black-1);
+  background: var(--bg-primary);
+  padding: var(--sp-1);
+  width: 100%;
+  border-radius: 4px;
+}
+
+.card-horizontal.card-product {
+  padding: 0;
+}
+
+.card-product.card-horizontal .card-image {
+  width: 50%;
+}
+
+.card.card-horizontal .card-content {
+  padding-left: var(--sp-1);
+}
+
+.card-product .card-content {
+  padding: var(--sp-05);
+}
+
+.card-product.card-horizontal .card-content {
+  padding: var(--sp-05) var(--sp-1);
+}
+
+.card-product .card-rating {
+  font-size: 16px;
+  color: var(--black-3);
+}
+
+.card-product .price-now {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-product .price-before,
+.card-product .discount {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 2px;
+}
+
+.card-product .price-before {
+  text-decoration: solid line-through red 2px;
+}
+
+.card-product .card-cta {
+  margin: var(--sp-05) 0 0;
+}
+
+.card-vertical .card-image img {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.card-horizontal .card-image img {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.card-product .btn {
+  width: 100%;
+  margin: 0.25rem 0;
+}
+
+.card:hover,
+.card-vertical:hover,
+.card-horizontal:hover,
+.card-product:hover {
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.2);
 }

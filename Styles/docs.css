@@ -79,6 +79,11 @@ body {
   align-items: center;
 }
 
+.code-container {
+  height: 432px;
+  overflow: auto;
+}
+
 .footer-container {
   background: var(--black-6);
   align-items: center;
