@@ -1,0 +1,57 @@
+.input {
+  width: 70%;
+  margin: var(--sp-05);
+}
+
+.input:first-child {
+  margin-top: 0;
+}
+
+.input input {
+  border: transparent 2px solid;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin: var(--sp-05) 0;
+  font-size: 1.2rem;
+}
+
+.input .input-success {
+  border-color: var(--green-3);
+  background: var(--green-6);
+}
+
+.input .input-error {
+  border-color: var(--red-3);
+  background: var(--red-6);
+}
+
+.input .error-msg {
+  font-size: 1rem;
+  margin: var(--sp-05) 0;
+  color: var(--red-2);
+}
+
+.input-checkbox,
+.input-radio {
+  display: flex;
+  align-items: center;
+}
+
+.input-checkbox label,
+.input-radio label {
+  margin: var(--sp-05);
+  font-size: 1.2rem;
+}
+
+.input-checkbox input,
+.input-radio input {
+  height: 1.2rem;
+  width: 1.2rem;
+}

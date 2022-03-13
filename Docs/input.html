@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Input | AceUI</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../Styles/docs.css" />
+    <link rel="stylesheet" href="../Styles/Components/input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="flex-column">
+    <!------ Main Header ------>
+    <header class="main-header flex-row">
+      <div class="main-header-logo mx-2 my-05">
+        <a href="#">
+          <h2 class="text-bolder">ace.</h2>
+        </a>
+      </div>
+      <nav class="main-nav mx-2">
+        <ul class="main-nav-links">
+          <li class="main-nav-link px-1">
+            <h6 class="text-bold">
+              <a href="./Docs/button.html">
+                Docs<i class="fa fa-file fa-3 px-05"></i>
+              </a>
+            </h6>
+          </li>
+          <li class="main-nav-link px-1">
+            <h6 class="text-bold">
+              <a
+                href="https://github.com/Ayesha-7/Component-Library"
+                target="blank"
+              >
+                Github<i class="fa fa-github fa-2 px-05"></i>
+              </a>
+            </h6>
+          </li>
+          <li>
+            <h6><a>🌜</a></h6>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!------ Body Content ------>
+
+    <main class="body-container flex-row">
+      <!--Side Nav-->
+      <aside class="main-side-nav flex-column">
+        <nav class="m-2">
+          <ul>
+            <li class="m-05">
+              <h6 class="py-1">Get Started 👩‍💻</h6>
+            </li>
+            <ul>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="#">
+                  Installation
+                </a>
+              </li>
+              <li class="side-nav-link side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="#">
+                  Colors
+                </a>
+              </li>
+            </ul>
+            <li class="m-05">
+              <h6 class="py-1">Components</h6>
+            </li>
+            <ul>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/avatar.html">
+                  Avatar
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/alert.html">
+                  Alert
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/badge.html">
+                  Badge
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/button.html">
+                  Button
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/card.html">
+                  Card
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/image.html">
+                  Image
+                </a>
+              </li>
+              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+                <a href="../Docs/input.html">
+                  Input
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- main content -->
+      <div class="doc-content m-2">
+        <h1 class="mb-2">Input</h1>
+        <div>
+          <p>
+            Input fields are an essential user interface design element. They
+            allow users to enter the information into the system's interface.
+            AceUI provides text input, checkbox input and radio input.
+          </p>
+        </div>
+
+        <!-- Text Label Input -->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Text Input</h3>
+          <div>
+            <p>
+              AceUI provides text input fields of type - simple, successful and
+              error.
+            </p>
+          </div>
+          <div class="component-container my-2 p-2">
+            <div class="input">
+              <label for="text">Text Input</label>
+              <input
+                type="text"
+                placeholder="Simple text input field"
+                class="input-simple"
+              />
+            </div>
+
+            <div class="input">
+              <label for="text">Username<sup>*</sup></label>
+              <input
+                type="text"
+                placeholder="Valid text input"
+                class="input-success"
+              />
+            </div>
+
+            <div class="input">
+              <label for="text">Password<sup>*</sup></label>
+              <input
+                type="password"
+                placeholder="Incorrect text input"
+                class="input-error"
+              />
+              <div class="error-msg">Incorrect password, try again.</div>
+            </div>
+          </div>
+          <div>
+            <script src="https://gist.github.com/Ayesha-7/3132428f69123b0706b960cdacbf5f65.js"></script>
+          </div>
+        </section>
+
+        <!-- Checkbox -->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Checkbox Input</h3>
+          <div>
+            <p>
+              Follow the guide given below to make checkbox input.
+            </p>
+          </div>
+          <div class="component-container my-2 p-2">
+            <div class="input-checkbox">
+              <input type="checkbox" name="checkbox" checked />
+              <label for="checkbox">Checked</label>
+            </div>
+
+            <div class="input-checkbox">
+              <input type="checkbox" name="checkbox" />
+              <label for="checkbox">Unchecked</label>
+            </div>
+
+            <div class="input-checkbox">
+              <input type="checkbox" name="checkbox" disabled />
+              <label for="checkbox">Disabled</label>
+            </div>
+          </div>
+          <div>
+            <script src="https://gist.github.com/Ayesha-7/a460aa86478ad270d289fe3f88c3bb13.js"></script>
+          </div>
+        </section>
+
+        <!--Radio Input-->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Radio Input</h3>
+          <div>
+            <p>
+              Follow the guide given below to make radio input.
+            </p>
+          </div>
+          <div class="component-container my-2 p-2">
+            <div class="input-radio">
+              <input type="radio" name="radio" checked />
+              <label for="radio">Checked</label>
+            </div>
+
+            <div class="input-radio">
+              <input type="radio" name="radio" />
+              <label for="radio">Unchecked</label>
+            </div>
+
+            <div class="input-radio">
+              <input type="radio" name="radio" disabled />
+              <label for="radio">Disabled</label>
+            </div>
+          </div>
+          <div>
+            <script src="https://gist.github.com/Ayesha-7/3611c2f6949e5583c9283dc10f2fbcb8.js"></script>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!------ Footer ------>
+
+    <footer class="footer-container flex-column">
+      <div class="footer-social mx-05 mt-05">
+        <ul class="footer-social-links flex-row">
+          <li>
+            <a href="https://github.com/Ayesha-7/" target="blank">
+              <i class="fa fa-github fa-1 mx-1"></i>
+            </a>
+          </li>
+          <li>
+            <a href=" www.linkedin.com/in/ayeshashaikh7" target="blank">
+              <i class="fa fa-linkedin fa-1 mx-1"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/_ayesha_7" target="blank">
+              <i class="fa fa-twitter fa-1 mx-1"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="m-05">
+        <h6>© | Made with 💛 by Ayesha | 2022</h6>
+      </div>
+    </footer>
+  </body>
+</html>
