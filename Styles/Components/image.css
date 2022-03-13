@@ -1,0 +1,18 @@
+.image-responive {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-round {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.image-square {
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+}
