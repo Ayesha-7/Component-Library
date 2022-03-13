@@ -1,6 +1,6 @@
 .input {
   width: 70%;
-  margin: 0.5rem;
+  margin: var(--sp-05);
 }
 
 .input:first-child {
@@ -18,7 +18,7 @@
 
 label {
   display: block;
-  margin: 0.5rem 0;
+  margin: var(--sp-05) 0;
   font-size: 1.2rem;
 }
 
@@ -34,7 +34,7 @@ label {
 
 .input .error-msg {
   font-size: 1rem;
-  margin: 0.5rem 0;
+  margin: var(--sp-05) 0;
   color: var(--red-2);
 }
 
@@ -46,7 +46,7 @@ label {
 
 .input-checkbox label,
 .input-radio label {
-  margin: 0.5rem;
+  margin: var(--sp-05);
   font-size: 1.2rem;
 }
 
