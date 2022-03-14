@@ -82,6 +82,7 @@
 .btn-outline:hover {
   color: var(--black-1);
   border: var(--black-1) 1px solid;
+  font-weight: 500;
 }
 
 .btn-link:hover {

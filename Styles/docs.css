@@ -80,8 +80,10 @@ body {
 }
 
 .code-container {
-  height: 432px;
+  max-height: 432px;
   overflow: auto;
+  border: 1px solid var(--black-6);
+  border-radius: 8px;
 }
 
 .footer-container {
