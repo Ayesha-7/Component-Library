@@ -67,18 +67,18 @@
 
 .card-product .card-rating,
 .card-product .card-subtext {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--black-3);
 }
 
 .card-product .price-now {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .card-product .price-before,
 .card-product .discount {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   padding: 2px;
 }
@@ -103,13 +103,13 @@
 
 .card-product .btn {
   width: 100%;
-  margin: 0.25rem 0;
+  margin: var(--sp-025) 0;
 }
 
 .card-badge {
   position: absolute;
   background: var(--orange-4);
-  padding: 0.5rem;
+  padding: var(--sp-05);
 }
 
 .card-badge.top-left {
