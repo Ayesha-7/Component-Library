@@ -79,6 +79,13 @@ body {
   align-items: center;
 }
 
+.code-container {
+  max-height: 432px;
+  overflow: auto;
+  border: 1px solid var(--black-6);
+  border-radius: 8px;
+}
+
 .footer-container {
   background: var(--black-6);
   align-items: center;
