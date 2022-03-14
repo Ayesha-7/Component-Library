@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Card | AceUI</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../Styles/docs.css" />
+    <link rel="stylesheet" href="../Styles/Components/card.css" />
+    <link rel="stylesheet" href="../Styles/Components/image.css" />
+    <link rel="stylesheet" href="../Styles/Components/button.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="flex-column">
+    <!------ Main Header ------>
+    <header class="main-header flex-row">
+      <div class="main-header-logo mx-2 my-05">
+        <a href="#">
+          <h2 class="text-bolder">ace.</h2>
+        </a>
+      </div>
+      <nav class="main-nav mx-2">
+        <ul class="main-nav-links">
+          <li class="main-nav-link px-1">
+            <h6 class="text-bold">
+              <a href="./Docs/button.html">
+                Docs<i class="fa fa-file fa-3 px-05"></i>
+              </a>
+            </h6>
+          </li>
+          <li class="main-nav-link px-1">
+            <h6 class="text-bold">
+              <a
+                href="https://github.com/Ayesha-7/Component-Library"
+                target="blank"
+              >
+                Github<i class="fa fa-github fa-2 px-05"></i>
+              </a>
+            </h6>
+          </li>
+          <li>
+            <h6><a>🌜</a></h6>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!------ Body Content ------>
+
+    <main class="body-container flex-row">
+      <!--Side Nav-->
+      <aside class="main-side-nav flex-column">
+        <nav class="m-2">
+          <ul>
+            <li class="m-05">
+              <h6 class="py-1">Get Started 👩‍💻</h6>
+            </li>
+            <ul>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="#">
+                  Installation
+                </a>
+              </li>
+              <li class="side-nav-link side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="#">
+                  Colors
+                </a>
+              </li>
+            </ul>
+            <li class="m-05">
+              <h6 class="py-1">Components</h6>
+            </li>
+            <ul>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/avatar.html">
+                  Avatar
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/alert.html">
+                  Alert
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/badge.html">
+                  Badge
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/button.html">
+                  Button
+                </a>
+              </li>
+              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+                <a href="../Docs/card.html">
+                  Card
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/image.html">
+                  Image
+                </a>
+              </li>
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                <a href="../Docs/input.html">
+                  Input
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- main content -->
+      <div class="doc-content m-2">
+        <h1 class="mb-2">Card</h1>
+        <div>
+          <p>
+            Card contains content and actions about a single subject. A card can
+            contain several different elements. Typically, the card serves as an
+            overview and an entry point for more detailed information.
+          </p>
+        </div>
+
+        <!-- Text only Card -->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Text Card</h3>
+          <div>
+            <p>
+              Text card can contain card title and some description text. Refer
+              the example below to make text-only card.
+            </p>
+          </div>
+          <div class="component-container my-2 p-2">
+            <div class="card-container">
+              <div class="card">
+                <h3 class="card-title">
+                  Text Card
+                </h3>
+                <div class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent interdum malesuada egestas. Aliquam viverra est ac
+                  ipsum congue, hendrerit tempus tellus ullamcorper.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <script src="https://gist.github.com/Ayesha-7/9084bad2b1ffeee655955dbaa7c3a76e.js"></script>
+          </div>
+        </section>
+
+        <!-- Vertical Card -->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Vertical Card</h3>
+          <div>
+            <p>
+              AceUI provides Simple Vertical Card & Vertical Product Card.
+              Follow the guide given below to make Vertical cards.
+            </p>
+          </div>
+          <!-- Simple Vertical Card-->
+          <div class="component-container my-2 p-2">
+            <div class="card-vertical-container">
+              <div class="card card-vertical">
+                <div class="card-image">
+                  <img
+                    src="../assets/images/card/bamboo.jpg"
+                    class="image-responive"
+                    alt="Bamboo Plant"
+                  />
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">
+                    Bamboo
+                  </h4>
+                  <div class="card-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent interdum malesuada egestas. Aliquam viverra est ac
+                    ipsum congue, hendrerit tempus tellus ullamcorper.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vertical Product Card-->
+            <div class="card-vertical-container">
+              <div class="card-product card-vertical">
+                <div class="card-image">
+                  <img
+                    src="../assets/images/card/bamboo.jpg"
+                    class="image-responive"
+                    alt="Bamboo Plant"
+                  />
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">
+                    Bamboo
+                  </h4>
+                  <p class="card-subtext">Popular plant in Gifts</p>
+                  <span class="price-now">₹499</span>
+                  <span class="price-before">₹659</span>
+                  <span class="discount">(24% OFF)</span>
+                  <div class="card-cta">
+                    <button class="btn btn-primary">
+                      <div>Order</div>
+                    </button>
+                    <button class="btn btn-outline">
+                      <div>Wishlist</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <script src="https://gist.github.com/Ayesha-7/deec0c723c2a688eb76fb40e6c7b0f47.js"></script>
+          </div>
+        </section>
+
+        <!-- Horizontal Card -->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Horizontal Card</h3>
+          <div>
+            <p>
+              AceUI provides Simple Horizontal Card & Horizontal Product Card.
+              Follow the guide given below to make Horizontal cards.
+            </p>
+          </div>
+          <div class="component-container my-2 p-2">
+            <!-- Simple Horizontal Card-->
+
+            <div class="card-horizontal-container m-2">
+              <div class="card card-horizontal">
+                <div class="card-image">
+                  <img
+                    src="../assets/images/card/rubber-plant.jpg"
+                    class="image-responive"
+                    alt="Rubber Plant"
+                  />
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">
+                    Rubber Plant
+                  </h4>
+                  <div class="card-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent interdum malesuada egestas. Aliquam viverra est ac
+                    ipsum congue, hendrerit tempus tellus ullamcorper.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Horizontal Product Card-->
+
+            <div class="card-horizontal-container m-2">
+              <div class="card-product card-horizontal">
+                <div class="card-image">
+                  <img
+                    src="../assets/images/card/rubber-plant.jpg"
+                    class="image-responive"
+                    alt="Rubber Plant"
+                  />
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">
+                    Rubber Plant
+                  </h4>
+                  <p class="card-subtext">Popular in House plants</p>
+                  <span class="price-now">₹399</span>
+                  <span class="price-before">₹599</span>
+                  <span class="discount">(33% OFF)</span>
+                  <div class="card-cta">
+                    <button class="btn btn-primary">
+                      <div>Order</div>
+                    </button>
+                    <button class="btn btn-outline">
+                      <div>Wishlist</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <script src="https://gist.github.com/Ayesha-7/4596fc64a4541ac775d5cc1644ef4287.js"></script>
+          </div>
+        </section>
+
+        <!-- Card with Badge -->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Card with Badge</h3>
+          <div>
+            <p>
+              You can easily add badge to any card that AceUI provides. Refer to
+              the example given below. Badge can be placed on top-right or
+              top-left of the card.
+            </p>
+          </div>
+
+          <div class="component-container my-2 p-2">
+            <!-- Horizontal Product Card with Badge -->
+            <div class="card-horizontal-container">
+              <div class="card-product card-horizontal">
+                <div class="card-image">
+                  <img
+                    src="../assets/images/card/rubber-plant.jpg"
+                    class="image-responive"
+                    alt="Rubber Plant"
+                  />
+                </div>
+                <div class="card-content">
+                  <div class="card-badge top-left">NEW</div>
+                  <h4 class="card-title">
+                    Rubber Plant
+                  </h4>
+                  <p class="card-subtext">Popular in House plants</p>
+                  <span class="price-now">₹399</span>
+                  <span class="price-before">₹599</span>
+                  <span class="discount">(33% OFF)</span>
+                  <div class="card-cta">
+                    <button class="btn btn-primary">
+                      <div>Order</div>
+                    </button>
+                    <button class="btn btn-outline">
+                      <div>Wishlist</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Vertical Product Card with Badge-->
+            <div class="card-vertical-container">
+              <div class="card-product card-vertical">
+                <div class="card-image">
+                  <img
+                    src="../assets/images/card/bamboo.jpg"
+                    class="image-responive"
+                    alt="Bamboo Plant"
+                  />
+                </div>
+                <div class="card-content">
+                  <div class="card-badge top-right">NEW</div>
+                  <h4 class="card-title">
+                    Bamboo
+                  </h4>
+                  <p class="card-subtext">Popular plant in Gifts</p>
+                  <span class="price-now">₹499</span>
+                  <span class="price-before">₹659</span>
+                  <span class="discount">(24% OFF)</span>
+                  <div class="card-cta">
+                    <button class="btn btn-primary">
+                      <div>Order</div>
+                    </button>
+                    <button class="btn btn-outline">
+                      <div>Wishlist</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <script src="https://gist.github.com/Ayesha-7/cae4396efdf5a5128c1b00aed1b99163.js"></script>
+          </div>
+        </section>
+
+        <!-- Card with Text Overlay -->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Card with Text Overlay</h3>
+          <div>
+            <p>
+              Follow the guide below to make Card with text overlay. Text
+              overlay can be added to any card ACEUI provides.
+            </p>
+          </div>
+          <div class="component-container my-2 p-2">
+            <!-- Horizontal Product Card with Text Overlay-->
+
+            <div class="card-horizontal-container m-2">
+              <div class="card-product card-horizontal">
+                <div class="card-overlay">
+                  <div>OUT OF STOCK</div>
+                </div>
+                <div class="card-image">
+                  <img
+                    src="../assets/images/card/rubber-plant.jpg"
+                    class="image-responive"
+                    alt="Rubber Plant"
+                  />
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">
+                    Rubber Plant
+                  </h4>
+                  <p class="card-subtext">Popular in House plants</p>
+                  <span class="price-now">₹399</span>
+                  <span class="price-before">₹599</span>
+                  <span class="discount">(33% OFF)</span>
+                  <div class="card-cta">
+                    <button class="btn btn-primary">
+                      <div>Order</div>
+                    </button>
+                    <button class="btn btn-outline">
+                      <div>Wishlist</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <script src="https://gist.github.com/Ayesha-7/1b1c58fd742fbac9b5db7281d92564f0.js"></script>
+          </div>
+        </section>
+
+        <!-- Card with Shadow -->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Card with Shadow</h3>
+          <div>
+            <p>
+              Follow the guide below to make Card with shadow. Shadow can be
+              added to any card AceUI provides.
+            </p>
+          </div>
+          <div class="component-container my-2 p-2">
+            <!-- Simple Horizontal Card with Shadow-->
+
+            <div class="card-horizontal-container m-2">
+              <div class="card card-horizontal card-shadow">
+                <div class="card-image">
+                  <img
+                    src="../assets/images/card/rubber-plant.jpg"
+                    class="image-responive"
+                    alt="Rubber Plant"
+                  />
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">
+                    Rubber Plant
+                  </h4>
+                  <div class="card-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent interdum malesuada egestas. Aliquam viverra est ac
+                    ipsum congue, hendrerit tempus tellus ullamcorper.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <script src="https://gist.github.com/Ayesha-7/96dbf5278c5e9979a322f15d2037b5ed.js"></script>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!------ Footer ------>
+
+    <footer class="footer-container flex-column">
+      <div class="footer-social mx-05 mt-05">
+        <ul class="footer-social-links flex-row">
+          <li>
+            <a href="https://github.com/Ayesha-7/" target="blank">
+              <i class="fa fa-github fa-1 mx-1"></i>
+            </a>
+          </li>
+          <li>
+            <a href=" www.linkedin.com/in/ayeshashaikh7" target="blank">
+              <i class="fa fa-linkedin fa-1 mx-1"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/_ayesha_7" target="blank">
+              <i class="fa fa-twitter fa-1 mx-1"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="m-05">
+        <h6>© | Made with 💛 by Ayesha | 2022</h6>
+      </div>
+    </footer>
+  </body>
+</html>

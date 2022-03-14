@@ -12,14 +12,14 @@
   background-color: var(--primary-color);
   color: var(--bg-primary);
   border-radius: 8px;
-  box-shadow: rgb(0 0 0 / 28%) 0px 4px 10px;
 }
 
 .btn-outline {
+  box-sizing: border-box;
+  color: var(--black-3);
   border: var(--black-3) 1px solid;
   background: var(--bg-primary);
   border-radius: 8px;
-  box-shadow: rgb(0 0 0 / 28%) 0px 4px 10px;
 }
 
 .btn-link {
@@ -81,6 +81,7 @@
 
 .btn-outline:hover {
   color: var(--black-1);
+  border: var(--black-1) 1px solid;
   font-weight: 500;
 }
 

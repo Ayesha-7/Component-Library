@@ -4,6 +4,7 @@
   --bg-secondary: #f4f7f6;
 
   /* variables for margin, padding, spaces */
+  --sp-025: 0.25rem;
   --sp-05: 0.5rem;
   --sp-075: 0.75rem;
   --sp-1: 1rem;
