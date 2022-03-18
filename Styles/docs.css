@@ -1,5 +1,4 @@
 @import url(../Styles/common.css);
-@import url(../Styles/Components/button.css);
 
 body {
   min-height: 100vh;
@@ -32,7 +31,7 @@ body {
 .main-side-nav {
   align-self: flex-start;
   justify-content: space-around;
-  min-width: 304px;
+  min-width: 19rem;
   width: 18%;
   position: fixed;
 }
@@ -61,7 +60,7 @@ body {
 }
 
 .doc-content {
-  min-width: 512px;
+  min-width: 32rem;
   width: 70%;
   margin-left: 22rem;
 }
@@ -80,7 +79,7 @@ body {
 }
 
 .code-container {
-  max-height: 432px;
+  max-height: 26rem;
   overflow: auto;
   border: 1px solid var(--black-6);
   border-radius: 8px;
@@ -91,4 +90,8 @@ body {
   align-items: center;
   box-shadow: 0px -4px 4px rgb(40 44 51 / 20%);
   z-index: 1;
+}
+
+.code-container .gist .gist-file {
+  margin-bottom: 0;
 }

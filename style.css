@@ -42,3 +42,7 @@ body {
   background: var(--black-6);
   align-items: center;
 }
+
+.btn {
+  box-shadow: rgb(0 0 0 / 28%) 0px 4px 10px;
+}
