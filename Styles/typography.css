@@ -68,6 +68,20 @@ p {
   text-align: right;
 }
 
+/* decoration */
+
+.text-strike-through {
+  text-decoration: line-through;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-gray {
+  color: var(--black-4);
+}
+
 /* Text-sizes */
 
 .text-xl {
@@ -75,19 +89,19 @@ p {
 }
 
 .text-lg {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .text-md {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .text-sm {
-  font-size: 0.875;
+  font-size: 1.25rem;
 }
 
 .text-xs {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 /* Font Weights */
@@ -110,4 +124,12 @@ p {
 
 .text-bolder {
   font-weight: 900;
+}
+
+.component-container {
+  flex-direction: column;
+}
+
+.component-container.text-container {
+  display: block;
 }

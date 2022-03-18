@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Introduction | AceUI</title>
+    <title>Typography | AceUI</title>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,22 +16,11 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../Styles/docs.css" />
-    <link rel="stylesheet" href="../Styles/Components/button.css" />
-
+    <link rel="stylesheet" href="../Styles/typography.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
-    <style>
-      .my-style {
-        color: var(--black-1);
-        background-color: var(--green-3);
-      }
-      .my-style:hover {
-        background-color: var(--green-2);
-      }
-    </style>
   </head>
   <body class="flex-column">
     <!------ Main Header ------>
@@ -78,7 +67,7 @@
               <h6 class="py-1">Get Started 👩‍💻</h6>
             </li>
             <ul>
-              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
                 <a href="./introduction.html">
                   Introduction
                 </a>
@@ -133,7 +122,7 @@
                   Toast
                 </a>
               </li>
-              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
                 <a href="./typography.html">
                   Typography
                 </a>
@@ -145,60 +134,106 @@
 
       <!-- main content -->
       <div class="doc-content m-2">
-        <h1 class="mb-2">Introduction</h1>
+        <h1 class="mb-2">Typography</h1>
         <div>
-          <h5 class="mb-1">
-            Hey there! 👋
-          </h5>
-          <p class="mb-1">
-            AceUI is a CSS library which helps you build beautiful UI in no
-            time. AceUI helps you build your Dream Project, by taking care of
-            all your designs.
-          </p>
           <p>
-            Get started with <strong>AceUI ✨</strong> and ace your designs.
+            AceUI provides various text utility classes for typography.
           </p>
         </div>
 
-        <!--Quick Start-->
+        <!-- Heading -->
 
         <section class="doc-section">
-          <h3 class="mb-1">Quick Start 🏁</h3>
+          <h3 class="mb-1">Headings</h3>
           <div>
             <p>
-              To use AceUI design and component in your project, Copy the below
-              stylesheet link in the head tag of your html file, above all other
-              style sheets.
-            </p>
-          </div>
-          <div class="code-container mt-2">
-            <script src="https://gist.github.com/Ayesha-7/50a706193caa0674a50fe1dd1befa34e.js"></script>
-          </div>
-        </section>
-
-        <!--Customizing styles-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Customization 🎨</h3>
-          <div>
-            <p>
-              AceUI's predefined components can be customised easily.
-            </p>
-            <p class="mt-1">
-              To customize the component, user has to override AceUI's classes.
-              And to override AceUI's base classes, user can add their own class
-              on top of AceUI's predefined classes, and style the component
-              however they want.
+              You can either use semantic HTML heading tags or class 'h1', 'h2',
+              'h3', 'h4', 'h5' and 'h6' for headings.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <button class="btn btn-primary">AceUI Button</button>
-            <button class="btn btn-primary my-style">
-              My Button
-            </button>
+            <h1 class="my-05">Heading 1</h1>
+            <h2 class="my-05">Heading 2</h2>
+            <h3 class="my-05">Heading 3</h3>
+            <h4 class="my-05">Heading 4</h4>
+            <h5 class="my-05">Heading 5</h5>
+            <h6 class="my-05">Heading 6</h6>
           </div>
-          <div class="code-container mt-2">
-            <script src="https://gist.github.com/Ayesha-7/2cb6e83589c29d2fabb15726876d169c.js"></script>
+          <div class="code-container">
+            <script src="https://gist.github.com/Ayesha-7/fd945323011b122d18acaf38510778a3.js"></script>
+          </div>
+        </section>
+
+        <!-- Font weights -->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Text Weight</h3>
+          <div>
+            <p>
+              AceUI has font weights classes as, 'text-light' for font weight
+              300, 'text-regular' for font weight 400,'text-semibold' for font
+              weight 500,'text-bold' for font weight 700 & 'text-bolder' for
+              font weight 900.
+            </p>
+          </div>
+          <div class="component-container my-2 p-2">
+            <div class="text-light text-lg my-05">text-light</div>
+            <div class="text-regular text-lg my-05">text-regular</div>
+            <div class="text-semibold text-lg my-05">text-semibold</div>
+            <div class="text-bold text-lg my-05">text-bold</div>
+            <div class="text-bolder text-lg my-05">text-bolder</div>
+          </div>
+          <div class="code-container">
+            <script src="https://gist.github.com/Ayesha-7/d087205c27edb5d3c0aa26d1d5c8f075.js"></script>
+          </div>
+        </section>
+
+        <!--Font Size-->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Text Size</h3>
+          <div>
+            <p>
+              Use class 'text-xl', 'text-lg', 'text-md', 'text-sm' and 'text-xs'
+              for xtra large, large, medium, small and extra small text.
+            </p>
+          </div>
+          <div class="component-container my-2 p-2">
+            <div class="text-xl my-05">Xtra Large Text</div>
+            <div class="text-lg my-05">Large Text</div>
+            <div class="text-md my-05">Medium Text</div>
+            <div class="text-sm my-05">Small Text</div>
+            <div class="text-xs my-05">Xtra Small Text</div>
+          </div>
+          <div class="code-container">
+            <script src="https://gist.github.com/Ayesha-7/ab412583a86db3a1113414bc6ea968b5.js"></script>
+          </div>
+        </section>
+
+        <!--Text decoration & alignment-->
+
+        <section class="doc-section">
+          <h3 class="mb-1">Text decoration & alignment</h3>
+          <div>
+            <p>
+              Use class 'text-strike-through', 'text-underline', 'text-gray' for
+              Strikethrough, underlined & gray text. Use class 'text-right',
+              'text-left' and 'text-center' for right, left and center aligned
+              text respectively.
+            </p>
+          </div>
+          <div class="component-container text-container my-2 p-2">
+            <div class="text-lg text-strike-through my-05">
+              Strikethrough Text
+            </div>
+            <div class="text-underline text-lg my-05">Underlined Text</div>
+            <div class="text-gray text-lg my-05">Gray Text</div>
+            <div class="text-center text-lg my-05">Centered Text</div>
+            <div class="text-right text-lg my-05">Right aligned Text</div>
+            <div class="text-left text-lg my-05">Left aligned Text</div>
+          </div>
+          <div class="code-container">
+            <script src="https://gist.github.com/Ayesha-7/3a45af0cc8fd7ca06a9651a720a7e2ab.js"></script>
           </div>
         </section>
       </div>
