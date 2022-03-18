@@ -1,0 +1,27 @@
+.toast-container {
+  width: 50%;
+}
+.toast {
+  border: transparent 1px solid;
+  border-radius: 8px;
+  width: 70%;
+  padding: var(--sp-075);
+  font-size: 1.2rem;
+  background-color: var(--bg-primary);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.toast-success {
+  background-color: var(--green-6);
+  border: 2px solid var(--green-2);
+}
+
+.toast-warning {
+  background-color: var(--orange-6);
+  border: 2px solid var(--orange-2);
+}
+
+.toast-error {
+  background-color: var(--red-6);
+  border: 2px solid var(--red-2);
+}
