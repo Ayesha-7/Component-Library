@@ -11,6 +11,7 @@
 .btn-link-solid {
   background-color: var(--primary-color);
   color: var(--bg-primary);
+  font-weight: 500;
   border-radius: 8px;
 }
 
@@ -19,6 +20,7 @@
   color: var(--black-3);
   border: var(--black-3) 1px solid;
   background: var(--bg-primary);
+  font-weight: 500;
   border-radius: 8px;
 }
 
@@ -82,7 +84,6 @@
 .btn-outline:hover {
   color: var(--black-1);
   border: var(--black-1) 1px solid;
-  font-weight: 500;
 }
 
 .btn-link:hover {
@@ -102,5 +103,5 @@
 }
 
 .btn-secondary:hover {
-  background-color: var(--black-6);
+  color: var(--black-1);
 }

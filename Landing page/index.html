@@ -1,83 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | AceUI</title>
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
-</head>
-<body class="flex-column">
-
-<!------ Main Header ------>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="flex-column">
+    <!------ Main Header ------>
 
     <header class="main-header flex-row">
-        <div class="main-header-logo mx-2 my-05">
-            <a href="#">
-                <h2 class="text-bolder">ace.</h2>
-            </a>   
-        </div>
-        <nav class="main-nav mx-2">
-            <ul class="main-nav-links">
-                <li class="main-nav-link px-1">
-                    <h6 class="text-bold">
-                        <a  href="#">Docs<i class="fa fa-file px-05" style="font-size:20px"></i></a>
-                    </h6>
-                </li>
-                <li class="main-nav-link px-1">
-                    <h6 class="text-bold">
-                        <a href="https://github.com/Ayesha-7/Component-Library">Github<i class="fa fa-github px-05" style="font-size:24px"></i>
-                        </a>
-                    </h6>
-                </li>
-                <li>
-                    <h6><a>🌜</a></h6>
-                </li>
-            </ul>
-        </nav>
+      <div class="main-header-logo mx-2 my-05">
+        <a href="https://aceui.netlify.app/">
+          <h2 class="text-bolder">ace.</h2>
+        </a>
+      </div>
+      <nav class="main-nav mx-2">
+        <ul class="main-nav-links">
+          <li class="main-nav-link px-1">
+            <h6 class="text-bold">
+              <a href="./Docs/avatar.html"
+                >Docs<i class="fa fa-file px-05" style="font-size: 20px;"></i
+              ></a>
+            </h6>
+          </li>
+          <li class="main-nav-link px-1">
+            <h6 class="text-bold">
+              <a href="https://github.com/Ayesha-7/Component-Library"
+                >Github<i
+                  class="fa fa-github px-05"
+                  style="font-size: 24px;"
+                ></i>
+              </a>
+            </h6>
+          </li>
+          <li>
+            <h6><a>🌜</a></h6>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-<!------ Hero Section ------>
+    <!------ Hero Section ------>
 
     <main class="main-container flex-column">
-        <div class="main-section flex-row">
-            <div class="hero-text-container">
-                <h1 class="m-1 text-bolder">Ace UI</h1>
-                <h3 class="m-1 text bold">Lorem ipsum dolor sit amet.</h3>
-                <p class="m-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                <button class="m-1 btn btn-primary text-bold">Get Started →</button>
-                <button class="m-1 btn btn-secondary text-bold">GitHub</button>
-            </div>
-            <div class="hero-image-container">
-                <img src="../assets/images/hero-image-1.svg" alt="hero image" class="feature-img"/>
-            </div>
+      <div class="main-section flex-row">
+        <div class="hero-text-container">
+          <h1 class="m-1 text-bolder">Ace UI</h1>
+          <h3 class="m-1 text bold">Lorem ipsum dolor sit amet.</h3>
+          <p class="m-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation.
+          </p>
+          <button class="m-1 btn btn-primary text-bold">Get Started →</button>
+          <button class="m-1 btn btn-secondary text-bold">GitHub</button>
         </div>
+        <div class="hero-image-container">
+          <img
+            src="../assets/images/hero-image-1.svg"
+            alt="hero image"
+            class="feature-img"
+          />
+        </div>
+      </div>
     </main>
 
-<!------ Footer ------>
+    <!------ Footer ------>
 
-    <footer class="footer-container flex-column" >
-        <div class="footer-social mx-05 mt-05">
-            <ul class="footer-social-links flex-row">
-                <li><i class="fa fa-github mx-1" style="font-size:28px"></i></li>
-                <li><i class="fa fa-linkedin mx-1" style="font-size:28px"></i></li>
-                <li><i class="fa fa-twitter mx-1" style="font-size:28px"></i></li>
-            </ul>
-        </div>
-        <div class="m-05">
-            <h6> © | Made with 💛 by Ayesha | 2022</h6> 
-        </div>
+    <footer class="footer-container flex-column">
+      <div class="footer-social mx-05 mt-05">
+        <ul class="footer-social-links flex-row">
+          <li><i class="fa fa-github mx-1" style="font-size: 28px;"></i></li>
+          <li><i class="fa fa-linkedin mx-1" style="font-size: 28px;"></i></li>
+          <li><i class="fa fa-twitter mx-1" style="font-size: 28px;"></i></li>
+        </ul>
+      </div>
+      <div class="m-05">
+        <h6>© | Made with 💛 by Ayesha | 2022</h6>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
