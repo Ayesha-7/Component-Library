@@ -1,0 +1,24 @@
+.nav-bar {
+  background-color: var(--blue-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--bg-primary);
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  margin: 1rem;
+}
+
+.nav-link a:hover {
+  color: var(--black-3);
+}

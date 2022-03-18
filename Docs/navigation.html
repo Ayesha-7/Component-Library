@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Introduction | AceUI</title>
+    <title>Navigation | AceUI</title>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +16,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../Styles/docs.css" />
-    <link rel="stylesheet" href="../Styles/Components/button.css" />
+    <link rel="stylesheet" href="../Styles/Components/navigation.css" />
 
     <link
       rel="stylesheet"
@@ -78,7 +78,7 @@
               <h6 class="py-1">Get Started 👩‍💻</h6>
             </li>
             <ul>
-              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+              <li class="side-nav-link my-1 mx-1 px-2 py-05">
                 <a href="./introduction.html">
                   Introduction
                 </a>
@@ -89,41 +89,41 @@
             </li>
             <ul>
               <li class="side-nav-link my-1 mx-1 px-2 py-05">
-                <a href="./avatar.html">
+                <a href="../Docs/avatar.html">
                   Avatar
                 </a>
               </li>
               <li class="side-nav-link my-1 mx-1 px-2 py-05">
-                <a href="./alert.html">
+                <a href="../Docs/alert.html">
                   Alert
                 </a>
               </li>
               <li class="side-nav-link my-1 mx-1 px-2 py-05">
-                <a href="./badge.html">
+                <a href="../Docs/badge.html">
                   Badge
                 </a>
               </li>
               <li class="side-nav-link my-1 mx-1 px-2 py-05">
-                <a href="./button.html">
+                <a href="../Docs/button.html">
                   Button
                 </a>
               </li>
               <li class="side-nav-link my-1 mx-1 px-2 py-05">
-                <a href="./card.html">
+                <a href="../Docs/card.html">
                   Card
                 </a>
               </li>
               <li class="side-nav-link my-1 mx-1 px-2 py-05">
-                <a href="./image.html">
+                <a href="../Docs/image.html">
                   Image
                 </a>
               </li>
-              <li class="side-nav-link my-1 mx-1 px-2 py-05">
-                <a href="./input.html">
+              <li class="side-nav-linkmy-1 mx-1 px-2 py-05">
+                <a href="../Docs/input.html">
                   Input
                 </a>
               </li>
-              <li class="side-nav-link my-1 mx-1 px-2 py-05">
+              <li class="side-nav-link active my-1 mx-1 px-2 py-05">
                 <a href="./navigation.html">
                   Navigation
                 </a>
@@ -145,60 +145,47 @@
 
       <!-- main content -->
       <div class="doc-content m-2">
-        <h1 class="mb-2">Introduction</h1>
+        <h1 class="mb-2">Navigation</h1>
         <div>
-          <h5 class="mb-1">
-            Hey there! 👋
-          </h5>
-          <p class="mb-1">
-            AceUI is a CSS library which helps you build beautiful UI in no
-            time. AceUI helps you build your Dream Project, by taking care of
-            all your designs.
-          </p>
           <p>
-            Get started with <strong>AceUI ✨</strong> and ace your designs.
+            Website's navigation bar (also known as nav bar) is often the first
+            touchpoint website's visitors interact with. A navigation bar is a
+            link to appropriate sections/pages in a website that helps users in
+            traversing the website.
           </p>
         </div>
 
-        <!--Quick Start-->
+        <!-- Text Label Input -->
 
         <section class="doc-section">
-          <h3 class="mb-1">Quick Start 🏁</h3>
+          <h3 class="mb-1">Simple Navigation</h3>
           <div>
             <p>
-              To use AceUI design and component in your project, Copy the below
-              stylesheet link in the head tag of your html file, above all other
-              style sheets.
-            </p>
-          </div>
-          <div class="code-container mt-2">
-            <script src="https://gist.github.com/Ayesha-7/50a706193caa0674a50fe1dd1befa34e.js"></script>
-          </div>
-        </section>
-
-        <!--Customizing styles-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Customization 🎨</h3>
-          <div>
-            <p>
-              AceUI's predefined components can be customised easily.
-            </p>
-            <p class="mt-1">
-              To customize the component, user has to override AceUI's classes.
-              And to override AceUI's base classes, user can add their own class
-              on top of AceUI's predefined classes, and style the component
-              however they want.
+              AceUI provides simple horizontal navigation bar, which you can
+              easily use in your project. Follow the example given below to make
+              navigation bar.
             </p>
           </div>
           <div class="component-container my-2 p-2">
-            <button class="btn btn-primary">AceUI Button</button>
-            <button class="btn btn-primary my-style">
-              My Button
-            </button>
+            <nav class="nav-bar">
+              <a href="#">
+                <div class="nav-logo">Logo</div>
+              </a>
+              <ul class="nav-links">
+                <li class="nav-link">
+                  <a href="#">Home</a>
+                </li>
+                <li class="nav-link">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="nav-link">
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div class="code-container mt-2">
-            <script src="https://gist.github.com/Ayesha-7/2cb6e83589c29d2fabb15726876d169c.js"></script>
+          <div>
+            <script src="https://gist.github.com/Ayesha-7/1fa64cf3ac024fb20d954150e63f1b13.js"></script>
           </div>
         </section>
       </div>
