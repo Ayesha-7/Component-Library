@@ -7,18 +7,18 @@ AceUI is a CSS library, with pre-defined styled components, and utilites, made t
 ![AceUI - Home Page](https://github.com/Ayesha-7/Component-Library/blob/eb5c4220cda02cf9f4928edc62f6d5727c954438/assets/images/AceUI%20-%20Home%20Page.png)
 ![AceUI - Avatar](https://github.com/Ayesha-7/Component-Library/blob/eb5c4220cda02cf9f4928edc62f6d5727c954438/assets/images/AceUI%20-%20snap.png)
 
-## Installation
+## Get Started 🏁
 To use AceUI design and component in your project, Copy the below stylesheet link in the head tag of your html file, above all other style sheets. 
 ```
 <link rel="stylesheet" href="https://aceui.netlify.app/aceui-styles.css" />
 ```
     
 
-## Documentation
+## Documentation 📝
 [Documentation](https://aceui.netlify.app/docs/introduction)
 
 
-## Features
+## Features ⚡️
 Following CSS components are provided in the component library:
 - Avatar
 - Alert
