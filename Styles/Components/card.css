@@ -127,6 +127,27 @@
   right: 0;
 }
 
+.card-dismiss {
+  position: absolute;
+  margin: 0 var(--sp-1);
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
+.card-dismiss.top-left {
+  top: 8px;
+  left: 0;
+}
+
+.card-dismiss.top-right {
+  top: 8px;
+  right: 0;
+}
+
+.card-dismiss:hover {
+  cursor: pointer;
+}
+
 .card-overlay {
   display: flex;
   align-items: center;
