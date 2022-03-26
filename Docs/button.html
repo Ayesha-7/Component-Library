@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Buttons | AceUI</title>
+    <title>Button | AceUI</title>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,7 +34,7 @@
         <ul class="main-nav-links">
           <li class="main-nav-link px-1">
             <h6 class="text-bold">
-              <a href="./introduction.html">
+              <a href="./introduction.html" class="active">
                 Docs
               </a>
             </h6>
@@ -55,12 +55,15 @@
         </ul>
       </nav>
     </header>
-
-    <!------ Body Content ------>
-
-    <main class="body-container flex-row">
-      <!--Side Nav-->
-      <aside class="main-side-nav flex-column">
+    <!--Mobile Screens -->
+    <header class="sub-header py-1 px-2">
+      <div class="menu-btn flex-row">
+        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        <h5>Components</h5>
+      </div>
+    </header>
+    <section class="mobile-menu-wrapper">
+      <aside class="mobile-nav">
         <nav class="mt-1 mx-2">
           <ul>
             <li class="m-05">
@@ -83,7 +86,7 @@
                 </a>
               </li>
               <li class="side-nav-link my-1 mx-1 px-2 py-05">
-                <a href="./alert.html">
+                <a href="alert.html">
                   Alert
                 </a>
               </li>
@@ -93,7 +96,7 @@
                 </a>
               </li>
               <li class="side-nav-link active my-1 mx-1 px-2 py-05">
-                <a href="button.html">
+                <a href="./button.html">
                   Button
                 </a>
               </li>
@@ -131,172 +134,250 @@
           </ul>
         </nav>
       </aside>
+    </section>
+    <!------ Body Content ------>
+    <section class="body-content-wrapper">
+      <main class="body-container flex-row">
+        <!--Side Nav-->
+        <aside class="main-side-nav flex-column">
+          <nav class="mt-1 mx-2">
+            <ul>
+              <li class="m-05">
+                <h6 class="py-1">Get Started 👩‍💻</h6>
+              </li>
+              <ul>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./introduction.html">
+                    Introduction
+                  </a>
+                </li>
+              </ul>
+              <li class="m-05">
+                <h6 class="py-1">Components</h6>
+              </li>
+              <ul class="component-nav">
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./avatar.html">
+                    Avatar
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./alert.html">
+                    Alert
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./badge.html">
+                    Badge
+                  </a>
+                </li>
+                <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+                  <a href="button.html">
+                    Button
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./card.html">
+                    Card
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./image.html">
+                    Image
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./input.html">
+                    Input
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./navigation.html">
+                    Navigation
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./toast.html">
+                    Toast
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./typography.html">
+                    Typography
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </nav>
+        </aside>
 
-      <!-- main content -->
-      <div class="doc-content m-2">
-        <h1 class="mb-2">Button</h1>
-        <div>
-          <p>
-            Buttons are an important component of any website. They allow users
-            to interact with the site. Ace your buttons with AceUI. AceUI
-            provides variety of buttons which you can easily use in your website
-            and web apps.
-          </p>
+        <!-- main content -->
+        <div class="doc-content m-2">
+          <h1 class="mb-2">Button</h1>
+          <div>
+            <p>
+              Buttons are an important component of any website. They allow
+              users to interact with the site. Ace your buttons with AceUI.
+              AceUI provides variety of buttons which you can easily use in your
+              website and web apps.
+            </p>
+          </div>
+
+          <!--Primary Button-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Primary Button</h3>
+            <div>
+              <p>
+                The primary button, contain actions that are primary to your
+                website. Add class btn and btn-primary to make primary button.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <button class="btn btn-primary">Primary</button>
+              <button class="btn btn-primary">Sign In</button>
+              <button class="btn btn-primary btn-round">Primary</button>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/d417f1d5869335b8d870ebe6593524e6.js"></script>
+            </div>
+          </section>
+
+          <!--Outline Button-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Outline Button</h3>
+            <div>
+              <p>
+                Just add classes as shown in example below and make Outline
+                buttons in no time!
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <button class="btn btn-outline">Outline</button>
+              <button class="btn btn-outline">Cancel</button>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/b5f5dd76f38e3dbe3a88b52902dd8619.js"></script>
+            </div>
+          </section>
+
+          <!--Link Button-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Link Button</h3>
+            <div>
+              <p>
+                Use classes as shown below and make Link buttons in no time!
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <a href="#" role="button" class="btn btn-link">Link</a>
+              <a href="#" role="button" class="btn btn-link-solid">Link</a>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/ae8265f0458872d7a128bd9ee1a3c6e5.js"></script>
+            </div>
+          </section>
+
+          <!--Icon Button-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Icon Button</h3>
+            <div>
+              <p>
+                Use classes as shown below in example and make Icon buttons.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <button class="btn btn-icon">
+                <img src="../assets/images/button/heart.png" alt="like" />
+              </button>
+              <button class="btn btn-icon-label">
+                <img src="../assets/images/button/share.png" alt="share" />
+                <div>Share</div>
+              </button>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/ee61460ddad6495931e167345c41772b.js"></script>
+            </div>
+          </section>
+
+          <!--Floating Action Button-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Floating Action Button</h3>
+            <div>
+              <p>
+                Just add classes as shown below and make Floating action buttons
+                in no time!
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <button class="btn btn-fab">
+                <img src="../assets/images/button/plus.png" alt="add" />
+              </button>
+              <button class="btn btn-fab">
+                <img src="../assets/images/button/pencil.png" alt="edit" />
+              </button>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/7cb7ecea17d87bc721be5a36ea8127bb.js"></script>
+            </div>
+          </section>
+
+          <!--Round Button-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Round Button</h3>
+            <div>
+              <p>
+                Add class btn-round to button tag to make Round buttons.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <button class="btn btn-primary btn-round">Primary</button>
+              <button class="btn btn-outline btn-round">Outline</button>
+              <a href="#" role="button" class="btn btn-link-solid btn-round">
+                Link
+              </a>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/c21f93165dd6fb693d319a5f338abf30.js"></script>
+            </div>
+          </section>
         </div>
+      </main>
+      <!------ Footer ------>
 
-        <!--Primary Button-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Primary Button</h3>
-          <div>
-            <p>
-              The primary button, contain actions that are primary to your
-              website. Add class btn and btn-primary to make primary button.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <button class="btn btn-primary">Primary</button>
-            <button class="btn btn-primary">Sign In</button>
-            <button class="btn btn-primary btn-round">Primary</button>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/d417f1d5869335b8d870ebe6593524e6.js"></script>
-          </div>
-        </section>
-
-        <!--Outline Button-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Outline Button</h3>
-          <div>
-            <p>
-              Just add classes as shown in example below and make Outline
-              buttons in no time!
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <button class="btn btn-outline">Outline</button>
-            <button class="btn btn-outline">Cancel</button>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/b5f5dd76f38e3dbe3a88b52902dd8619.js"></script>
-          </div>
-        </section>
-
-        <!--Link Button-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Link Button</h3>
-          <div>
-            <p>
-              Use classes as shown below and make Link buttons in no time!
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <a href="#" role="button" class="btn btn-link">Link</a>
-            <a href="#" role="button" class="btn btn-link-solid">Link</a>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/ae8265f0458872d7a128bd9ee1a3c6e5.js"></script>
-          </div>
-        </section>
-
-        <!--Icon Button-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Icon Button</h3>
-          <div>
-            <p>
-              Use classes as shown below in example and make Icon buttons.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <button class="btn btn-icon">
-              <img src="../assets/images/button/heart.png" alt="like" />
-            </button>
-            <button class="btn btn-icon-label">
-              <img src="../assets/images/button/share.png" alt="share" />
-              <div>Share</div>
-            </button>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/ee61460ddad6495931e167345c41772b.js"></script>
-          </div>
-        </section>
-
-        <!--Floating Action Button-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Floating Action Button</h3>
-          <div>
-            <p>
-              Just add classes as shown below and make Floating action buttons
-              in no time!
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <button class="btn btn-fab">
-              <img src="../assets/images/button/plus.png" alt="add" />
-            </button>
-            <button class="btn btn-fab">
-              <img src="../assets/images/button/pencil.png" alt="edit" />
-            </button>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/7cb7ecea17d87bc721be5a36ea8127bb.js"></script>
-          </div>
-        </section>
-
-        <!--Round Button-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Round Button</h3>
-          <div>
-            <p>
-              Add class btn-round to button tag to make Round buttons.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <button class="btn btn-primary btn-round">Primary</button>
-            <button class="btn btn-outline btn-round">Outline</button>
-            <a href="#" role="button" class="btn btn-link-solid btn-round">
-              Link
-            </a>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/c21f93165dd6fb693d319a5f338abf30.js"></script>
-          </div>
-        </section>
-      </div>
-    </main>
-    <!------ Footer ------>
-
-    <footer class="footer-container flex-column">
-      <div class="footer-social mx-05 mt-05">
-        <ul class="footer-social-links flex-row">
-          <li>
-            <a href="https://github.com/Ayesha-7/" target="_blank">
-              <i class="fa fa-github fa-1 mx-1"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/ayeshashaikh7/"
-              target="_blank"
-            >
-              <i class="fa fa-linkedin fa-1 mx-1"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/_ayesha_7" target="_blank">
-              <i class="fa fa-twitter fa-1 mx-1"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="m-05">
-        <h6>© | Made with 💛 by Ayesha | 2022</h6>
-      </div>
-    </footer>
+      <footer class="footer-container flex-column">
+        <div class="footer-social mx-05 mt-05">
+          <ul class="footer-social-links flex-row">
+            <li>
+              <a href="https://github.com/Ayesha-7/" target="_blank">
+                <i class="fa fa-github fa-1 mx-1"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ayeshashaikh7/"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin fa-1 mx-1"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/_ayesha_7" target="_blank">
+                <i class="fa fa-twitter fa-1 mx-1"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="m-05">
+          <h6>© | Made with 💛 by Ayesha | 2022</h6>
+        </div>
+      </footer>
+    </section>
+    <script src="../Scripts/mobile-navigation.js"></script>
   </body>
 </html>

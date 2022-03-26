@@ -45,7 +45,7 @@
         <ul class="main-nav-links">
           <li class="main-nav-link px-1">
             <h6 class="text-bold">
-              <a href="./introduction.html">
+              <a href="./introduction.html" class="active">
                 Docs
               </a>
             </h6>
@@ -66,12 +66,15 @@
         </ul>
       </nav>
     </header>
-
-    <!------ Body Content ------>
-
-    <main class="body-container flex-row">
-      <!--Side Nav-->
-      <aside class="main-side-nav flex-column">
+    <!--Mobile Screens -->
+    <header class="sub-header py-1 px-2">
+      <div class="menu-btn flex-row">
+        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        <h5>Components</h5>
+      </div>
+    </header>
+    <section class="mobile-menu-wrapper">
+      <aside class="mobile-nav">
         <nav class="mt-1 mx-2">
           <ul>
             <li class="m-05">
@@ -94,7 +97,7 @@
                 </a>
               </li>
               <li class="side-nav-link my-1 mx-1 px-2 py-05">
-                <a href="./alert.html">
+                <a href="alert.html">
                   Alert
                 </a>
               </li>
@@ -142,95 +145,174 @@
           </ul>
         </nav>
       </aside>
+    </section>
 
-      <!-- main content -->
-      <div class="doc-content m-2">
-        <h1 class="mb-2">Introduction</h1>
-        <div>
-          <h5 class="mb-1">
-            Hey there! 👋
-          </h5>
-          <p class="mb-1">
-            AceUI is a CSS library which helps you build beautiful UI in no
-            time. AceUI helps you build your Dream Project, by taking care of
-            all your designs.
-          </p>
-          <p>
-            Get started with <strong>AceUI ✨</strong> and ace your designs.
-          </p>
+    <!------ Body Content ------>
+    <section class="body-content-wrapper">
+      <main class="body-container flex-row">
+        <!--Side Nav-->
+        <aside class="main-side-nav flex-column">
+          <nav class="mt-1 mx-2">
+            <ul>
+              <li class="m-05">
+                <h6 class="py-1">Get Started 👩‍💻</h6>
+              </li>
+              <ul>
+                <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+                  <a href="./introduction.html">
+                    Introduction
+                  </a>
+                </li>
+              </ul>
+              <li class="m-05">
+                <h6 class="py-1">Components</h6>
+              </li>
+              <ul class="component-nav">
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./avatar.html">
+                    Avatar
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./alert.html">
+                    Alert
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./badge.html">
+                    Badge
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./button.html">
+                    Button
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./card.html">
+                    Card
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./image.html">
+                    Image
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./input.html">
+                    Input
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./navigation.html">
+                    Navigation
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./toast.html">
+                    Toast
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./typography.html">
+                    Typography
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- main content -->
+        <div class="doc-content m-2">
+          <h1 class="mb-2">Introduction</h1>
+          <div>
+            <h5 class="mb-1">
+              Hey there! 👋
+            </h5>
+            <p class="mb-1">
+              AceUI is a CSS library which helps you build beautiful UI in no
+              time. AceUI helps you build your Dream Project, by taking care of
+              all your designs.
+            </p>
+            <p>
+              Get started with <strong>AceUI ✨</strong> and ace your designs.
+            </p>
+          </div>
+
+          <!--Quick Start-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Quick Start 🏁</h3>
+            <div>
+              <p>
+                To use AceUI design and component in your project, Copy the
+                below stylesheet link in the head tag of your html file, above
+                all other style sheets.
+              </p>
+            </div>
+            <div class="code-container mt-2">
+              <script src="https://gist.github.com/Ayesha-7/50a706193caa0674a50fe1dd1befa34e.js"></script>
+            </div>
+          </section>
+
+          <!--Customizing styles-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Customization 🎨</h3>
+            <div>
+              <p>
+                AceUI's predefined components can be customised easily.
+              </p>
+              <p class="mt-1">
+                To customize the component, user has to override AceUI's
+                classes. And to override AceUI's base classes, user can add
+                their own class on top of AceUI's predefined classes, and style
+                the component however they want.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <button class="btn btn-primary">AceUI Button</button>
+              <button class="btn btn-primary my-style">
+                My Button
+              </button>
+            </div>
+            <div class="code-container mt-2">
+              <script src="https://gist.github.com/Ayesha-7/2cb6e83589c29d2fabb15726876d169c.js"></script>
+            </div>
+          </section>
         </div>
+      </main>
+      <!------ Footer ------>
 
-        <!--Quick Start-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Quick Start 🏁</h3>
-          <div>
-            <p>
-              To use AceUI design and component in your project, Copy the below
-              stylesheet link in the head tag of your html file, above all other
-              style sheets.
-            </p>
-          </div>
-          <div class="code-container mt-2">
-            <script src="https://gist.github.com/Ayesha-7/50a706193caa0674a50fe1dd1befa34e.js"></script>
-          </div>
-        </section>
-
-        <!--Customizing styles-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Customization 🎨</h3>
-          <div>
-            <p>
-              AceUI's predefined components can be customised easily.
-            </p>
-            <p class="mt-1">
-              To customize the component, user has to override AceUI's classes.
-              And to override AceUI's base classes, user can add their own class
-              on top of AceUI's predefined classes, and style the component
-              however they want.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <button class="btn btn-primary">AceUI Button</button>
-            <button class="btn btn-primary my-style">
-              My Button
-            </button>
-          </div>
-          <div class="code-container mt-2">
-            <script src="https://gist.github.com/Ayesha-7/2cb6e83589c29d2fabb15726876d169c.js"></script>
-          </div>
-        </section>
-      </div>
-    </main>
-    <!------ Footer ------>
-
-    <footer class="footer-container flex-column">
-      <div class="footer-social mx-05 mt-05">
-        <ul class="footer-social-links flex-row">
-          <li>
-            <a href="https://github.com/Ayesha-7/" target="_blank">
-              <i class="fa fa-github fa-1 mx-1"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/ayeshashaikh7/"
-              target="_blank"
-            >
-              <i class="fa fa-linkedin fa-1 mx-1"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/_ayesha_7" target="_blank">
-              <i class="fa fa-twitter fa-1 mx-1"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="m-05">
-        <h6>© | Made with 💛 by Ayesha | 2022</h6>
-      </div>
-    </footer>
+      <footer class="footer-container flex-column">
+        <div class="footer-social mx-05 mt-05">
+          <ul class="footer-social-links flex-row">
+            <li>
+              <a href="https://github.com/Ayesha-7/" target="_blank">
+                <i class="fa fa-github fa-1 mx-1"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ayeshashaikh7/"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin fa-1 mx-1"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/_ayesha_7" target="_blank">
+                <i class="fa fa-twitter fa-1 mx-1"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="m-05">
+          <h6>© | Made with 💛 by Ayesha | 2022</h6>
+        </div>
+      </footer>
+    </section>
+    <script src="../Scripts/mobile-navigation.js"></script>
   </body>
 </html>
