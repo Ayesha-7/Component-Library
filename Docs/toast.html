@@ -34,7 +34,7 @@
         <ul class="main-nav-links">
           <li class="main-nav-link px-1">
             <h6 class="text-bold">
-              <a href="./introduction.html">
+              <a href="./introduction.html" class="active">
                 Docs
               </a>
             </h6>
@@ -55,12 +55,15 @@
         </ul>
       </nav>
     </header>
-
-    <!------ Body Content ------>
-
-    <main class="body-container flex-row">
-      <!--Side Nav-->
-      <aside class="main-side-nav flex-column">
+    <!--Mobile Screens -->
+    <header class="sub-header py-1 px-2">
+      <div class="menu-btn flex-row">
+        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        <h5>Components</h5>
+      </div>
+    </header>
+    <section class="mobile-menu-wrapper">
+      <aside class="mobile-nav">
         <nav class="mt-1 mx-2">
           <ul>
             <li class="m-05">
@@ -83,7 +86,7 @@
                 </a>
               </li>
               <li class="side-nav-link my-1 mx-1 px-2 py-05">
-                <a href="./alert.html">
+                <a href="alert.html">
                   Alert
                 </a>
               </li>
@@ -131,78 +134,156 @@
           </ul>
         </nav>
       </aside>
+    </section>
+    <!------ Body Content ------>
+    <section class="body-content-wrapper">
+      <main class="body-container flex-row">
+        <!--Side Nav-->
+        <aside class="main-side-nav flex-column">
+          <nav class="mt-1 mx-2">
+            <ul>
+              <li class="m-05">
+                <h6 class="py-1">Get Started 👩‍💻</h6>
+              </li>
+              <ul>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./introduction.html">
+                    Introduction
+                  </a>
+                </li>
+              </ul>
+              <li class="m-05">
+                <h6 class="py-1">Components</h6>
+              </li>
+              <ul class="component-nav">
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./avatar.html">
+                    Avatar
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./alert.html">
+                    Alert
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./badge.html">
+                    Badge
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./button.html">
+                    Button
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./card.html">
+                    Card
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./image.html">
+                    Image
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./input.html">
+                    Input
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./navigation.html">
+                    Navigation
+                  </a>
+                </li>
+                <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+                  <a href="./toast.html">
+                    Toast
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./typography.html">
+                    Typography
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </nav>
+        </aside>
 
-      <!-- main content -->
-      <div class="doc-content m-2">
-        <h1 class="mb-2">Toast</h1>
-        <div>
-          <p>
-            Toast messages let users know that the task they just performed was
-            successful or not. These messages give users immediate feedback
-            after taking some action. They usually stay on the screen for 2-3
-            seconds and then disappear. Toast can be used to show success
-            messages, warnings or errors.
-          </p>
-        </div>
-
-        <!-- Toast - Success -->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Toast</h3>
+        <!-- main content -->
+        <div class="doc-content m-2">
+          <h1 class="mb-2">Toast</h1>
           <div>
             <p>
-              AceUI provides toasts of three variants, that can be used to show
-              success, warning or error message. Follow example given below to
-              make toast.
+              Toast messages let users know that the task they just performed
+              was successful or not. These messages give users immediate
+              feedback after taking some action. They usually stay on the screen
+              for 2-3 seconds and then disappear. Toast can be used to show
+              success messages, warnings or errors.
             </p>
           </div>
-          <div class="component-container my-2 p-2">
-            <div class="toast-container">
-              <div class="toast toast-success m-1">
-                This is success toast
-              </div>
-              <div class="toast toast-warning m-1">
-                This is warning toast
-              </div>
-              <div class="toast toast-error m-1">
-                This is error toast
+
+          <!-- Toast - Success -->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Toast</h3>
+            <div>
+              <p>
+                AceUI provides toasts of three variants, that can be used to
+                show success, warning or error message. Follow example given
+                below to make toast.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <div class="toast-container">
+                <div class="toast toast-success m-1">
+                  This is success toast
+                </div>
+                <div class="toast toast-warning m-1">
+                  This is warning toast
+                </div>
+                <div class="toast toast-error m-1">
+                  This is error toast
+                </div>
               </div>
             </div>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/e751f501593e969181ed8a149e45a91c.js"></script>
-          </div>
-        </section>
-      </div>
-    </main>
-    <!------ Footer ------>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/e751f501593e969181ed8a149e45a91c.js"></script>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!------ Footer ------>
 
-    <footer class="footer-container flex-column">
-      <div class="footer-social mx-05 mt-05">
-        <ul class="footer-social-links flex-row">
-          <li>
-            <a href="https://github.com/Ayesha-7/" target="_blank">
-              <i class="fa fa-github fa-1 mx-1"></i>
-            </a>
-          </li>
-          <li>
-            <a href=" www.linkedin.com/in/ayeshashaikh7" target="_blank">
-              <i class="fa fa-linkedin fa-1 mx-1"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/ayeshashaikh7/"
-              target="_blank"
-            >
-              <i class="fa fa-twitter fa-1 mx-1"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="m-05">
-        <h6>© | Made with 💛 by Ayesha | 2022</h6>
-      </div>
-    </footer>
+      <footer class="footer-container flex-column">
+        <div class="footer-social mx-05 mt-05">
+          <ul class="footer-social-links flex-row">
+            <li>
+              <a href="https://github.com/Ayesha-7/" target="_blank">
+                <i class="fa fa-github fa-1 mx-1"></i>
+              </a>
+            </li>
+            <li>
+              <a href=" www.linkedin.com/in/ayeshashaikh7" target="_blank">
+                <i class="fa fa-linkedin fa-1 mx-1"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ayeshashaikh7/"
+                target="_blank"
+              >
+                <i class="fa fa-twitter fa-1 mx-1"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="m-05">
+          <h6>© | Made with 💛 by Ayesha | 2022</h6>
+        </div>
+      </footer>
+    </section>
+    <script src="../Scripts/mobile-navigation.js"></script>
   </body>
 </html>

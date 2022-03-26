@@ -34,7 +34,7 @@
         <ul class="main-nav-links">
           <li class="main-nav-link px-1">
             <h6 class="text-bold">
-              <a href="introduction.html">
+              <a href="introduction.html" class="active">
                 Docs
               </a>
             </h6>
@@ -55,12 +55,15 @@
         </ul>
       </nav>
     </header>
-
-    <!------ Body Content ------>
-
-    <main class="body-container flex-row">
-      <!--Side Nav-->
-      <aside class="main-side-nav flex-column">
+    <!--Mobile Screens -->
+    <header class="sub-header py-1 px-2">
+      <div class="menu-btn flex-row">
+        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        <h5>Components</h5>
+      </div>
+    </header>
+    <section class="mobile-menu-wrapper">
+      <aside class="mobile-nav">
         <nav class="mt-1 mx-2">
           <ul>
             <li class="m-05">
@@ -78,12 +81,12 @@
             </li>
             <ul>
               <li class="side-nav-link active my-1 mx-1 px-2 py-05">
-                <a href="avatar.html">
+                <a href="./avatar.html">
                   Avatar
                 </a>
               </li>
               <li class="side-nav-link my-1 mx-1 px-2 py-05">
-                <a href="./alert.html">
+                <a href="alert.html">
                   Alert
                 </a>
               </li>
@@ -131,164 +134,242 @@
           </ul>
         </nav>
       </aside>
+    </section>
+    <!------ Body Content ------>
+    <section class="body-content-wrapper">
+      <main class="body-container flex-row">
+        <!--Side Nav-->
+        <aside class="main-side-nav flex-column">
+          <nav class="mt-1 mx-2">
+            <ul>
+              <li class="m-05">
+                <h6 class="py-1">Get Started 👩‍💻</h6>
+              </li>
+              <ul>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./introduction.html">
+                    Introduction
+                  </a>
+                </li>
+              </ul>
+              <li class="m-05">
+                <h6 class="py-1">Components</h6>
+              </li>
+              <ul class="component-nav">
+                <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+                  <a href="avatar.html">
+                    Avatar
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./alert.html">
+                    Alert
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./badge.html">
+                    Badge
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./button.html">
+                    Button
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./card.html">
+                    Card
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./image.html">
+                    Image
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./input.html">
+                    Input
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./navigation.html">
+                    Navigation
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./toast.html">
+                    Toast
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./typography.html">
+                    Typography
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </nav>
+        </aside>
 
-      <!-- main content -->
-      <div class="doc-content m-2">
-        <h1 class="mb-2">Avatar</h1>
-        <div>
-          <p>
-            An Avatar is a visual way to represent a person or brand in the
-            product. They can display text, icons, or images. Ace your Avatars
-            with AceUI! Follow the guide below to make avatar of your choice.
-          </p>
+        <!-- main content -->
+        <div class="doc-content m-2">
+          <h1 class="mb-2">Avatar</h1>
+          <div>
+            <p>
+              An Avatar is a visual way to represent a person or brand in the
+              product. They can display text, icons, or images. Ace your Avatars
+              with AceUI! Follow the guide below to make avatar of your choice.
+            </p>
+          </div>
+
+          <!--Round Avatar-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Round Avatar</h3>
+            <div>
+              <p>
+                You can make round image avatar by adding class avatar-round to
+                your avatar image.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <img
+                class="avatar-round"
+                src="../assets/images/avatar/olaf.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatar-round"
+                src="../assets/images/avatar/HTTYD.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatar-round"
+                src="../assets/images/avatar/baymax.jpeg"
+                alt="avatar"
+              />
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/f9d2ae59ad5bcfce14fa8a84845e0214.js"></script>
+            </div>
+          </section>
+
+          <!--Square Avatar-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Square Avatar</h3>
+            <div>
+              <p>
+                Just add class avatar-square to image tag to make Square avatar.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <img
+                class="avatar-square"
+                src="../assets/images/avatar/olaf.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatar-square"
+                src="../assets/images/avatar/HTTYD.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatar-square"
+                src="../assets/images/avatar/baymax.jpeg"
+                alt="avatar"
+              />
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/546b09bd5a16062c45a2d22eb54560c7.js"></script>
+            </div>
+          </section>
+
+          <!--Text Avatar-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Text Avatar</h3>
+            <div>
+              <p>
+                Just add class avatar-text to make Text avatar.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <div class="avatar-text"><span>AA</span></div>
+              <div class="avatar-text"><span>AS</span></div>
+              <div class="avatar-text"><span>AB</span></div>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/2db64fd9d1e8082de98bbe77149a363b.js"></script>
+            </div>
+          </section>
+
+          <!--Avatar Size-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Avatar Size</h3>
+            <div>
+              <p>
+                AceUI provides avatar of four size - large, medium, small,
+                extra-small. Use class avatar-lg, avatar-md, avatar-sm and
+                avatar-xs along with avatar-round, avatar-square or avatar-text
+                to make avatar of respective size.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <img
+                class="avatar-square avatar-lg"
+                src="../assets/images/avatar/olaf.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatar-round avatar-md"
+                src="../assets/images/avatar/olaf.jpg"
+                alt="avatar"
+              />
+              <img
+                class="avatar-square avatar-sm"
+                src="../assets/images/avatar/olaf.jpg"
+                alt="avatar"
+              />
+              <div class="avatar-text avatar-xs"><span>AB</span></div>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/d75831e5d28a029d67e97f035f528035.js"></script>
+            </div>
+          </section>
         </div>
+      </main>
+      <!------ Footer ------>
 
-        <!--Round Avatar-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Round Avatar</h3>
-          <div>
-            <p>
-              You can make round image avatar by adding class avatar-round to
-              your avatar image.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <img
-              class="avatar-round"
-              src="../assets/images/avatar/olaf.jpg"
-              alt="avatar"
-            />
-            <img
-              class="avatar-round"
-              src="../assets/images/avatar/HTTYD.jpg"
-              alt="avatar"
-            />
-            <img
-              class="avatar-round"
-              src="../assets/images/avatar/baymax.jpeg"
-              alt="avatar"
-            />
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/f9d2ae59ad5bcfce14fa8a84845e0214.js"></script>
-          </div>
-        </section>
-
-        <!--Square Avatar-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Square Avatar</h3>
-          <div>
-            <p>
-              Just add class avatar-square to image tag to make Square avatar.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <img
-              class="avatar-square"
-              src="../assets/images/avatar/olaf.jpg"
-              alt="avatar"
-            />
-            <img
-              class="avatar-square"
-              src="../assets/images/avatar/HTTYD.jpg"
-              alt="avatar"
-            />
-            <img
-              class="avatar-square"
-              src="../assets/images/avatar/baymax.jpeg"
-              alt="avatar"
-            />
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/546b09bd5a16062c45a2d22eb54560c7.js"></script>
-          </div>
-        </section>
-
-        <!--Text Avatar-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Text Avatar</h3>
-          <div>
-            <p>
-              Just add class avatar-text to make Text avatar.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <div class="avatar-text"><span>AA</span></div>
-            <div class="avatar-text"><span>AS</span></div>
-            <div class="avatar-text"><span>AB</span></div>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/2db64fd9d1e8082de98bbe77149a363b.js"></script>
-          </div>
-        </section>
-
-        <!--Avatar Size-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Avatar Size</h3>
-          <div>
-            <p>
-              AceUI provides avatar of four size - large, medium, small,
-              extra-small. Use class avatar-lg, avatar-md, avatar-sm and
-              avatar-xs along with avatar-round, avatar-square or avatar-text to
-              make avatar of respective size.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <img
-              class="avatar-square avatar-lg"
-              src="../assets/images/avatar/olaf.jpg"
-              alt="avatar"
-            />
-            <img
-              class="avatar-round avatar-md"
-              src="../assets/images/avatar/olaf.jpg"
-              alt="avatar"
-            />
-            <img
-              class="avatar-square avatar-sm"
-              src="../assets/images/avatar/olaf.jpg"
-              alt="avatar"
-            />
-            <div class="avatar-text avatar-xs"><span>AB</span></div>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/d75831e5d28a029d67e97f035f528035.js"></script>
-          </div>
-        </section>
-      </div>
-    </main>
-    <!------ Footer ------>
-
-    <footer class="footer-container flex-column">
-      <div class="footer-social mx-05 mt-05">
-        <ul class="footer-social-links flex-row">
-          <li>
-            <a href="https://github.com/Ayesha-7/" target="_blank">
-              <i class="fa fa-github fa-1 mx-1"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/ayeshashaikh7/"
-              target="_blank"
-            >
-              <i class="fa fa-linkedin fa-1 mx-1"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/_ayesha_7" target="_blank">
-              <i class="fa fa-twitter fa-1 mx-1"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="m-05">
-        <h6>© | Made with 💛 by Ayesha | 2022</h6>
-      </div>
-    </footer>
+      <footer class="footer-container flex-column">
+        <div class="footer-social mx-05 mt-05">
+          <ul class="footer-social-links flex-row">
+            <li>
+              <a href="https://github.com/Ayesha-7/" target="_blank">
+                <i class="fa fa-github fa-1 mx-1"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ayeshashaikh7/"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin fa-1 mx-1"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/_ayesha_7" target="_blank">
+                <i class="fa fa-twitter fa-1 mx-1"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="m-05">
+          <h6>© | Made with 💛 by Ayesha | 2022</h6>
+        </div>
+      </footer>
+    </section>
+    <script src="../Scripts/mobile-navigation.js"></script>
   </body>
 </html>

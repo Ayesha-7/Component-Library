@@ -34,7 +34,7 @@
         <ul class="main-nav-links">
           <li class="main-nav-link px-1">
             <h6 class="text-bold">
-              <a href="./introduction.html">
+              <a href="./introduction.html" class="active">
                 Docs
               </a>
             </h6>
@@ -55,12 +55,15 @@
         </ul>
       </nav>
     </header>
-
-    <!------ Body Content ------>
-
-    <main class="body-container flex-row">
-      <!--Side Nav-->
-      <aside class="main-side-nav flex-column">
+    <!--Mobile Screens -->
+    <header class="sub-header py-1 px-2">
+      <div class="menu-btn flex-row">
+        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        <h5>Components</h5>
+      </div>
+    </header>
+    <section class="mobile-menu-wrapper">
+      <aside class="mobile-nav">
         <nav class="mt-1 mx-2">
           <ul>
             <li class="m-05">
@@ -131,204 +134,284 @@
           </ul>
         </nav>
       </aside>
+    </section>
 
-      <!-- main content -->
-      <div class="doc-content m-2">
-        <h1 class="mb-2">Alert</h1>
-        <div>
-          <p>
-            An alert displays a short, important message in a way that attracts
-            the user's attention without interrupting the user's task. Alerting
-            makes it possible for people to keep up with the information that
-            matters most to them.
-          </p>
+    <!------ Body Content ------>
+
+    <section class="body-content-wrapper">
+      <main class="body-container flex-row">
+        <!--Side Nav-->
+        <aside class="main-side-nav flex-column">
+          <nav class="mt-1 mx-2">
+            <ul>
+              <li class="m-05">
+                <h6 class="py-1">Get Started 👩‍💻</h6>
+              </li>
+              <ul>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./introduction.html">
+                    Introduction
+                  </a>
+                </li>
+              </ul>
+              <li class="m-05">
+                <h6 class="py-1">Components</h6>
+              </li>
+              <ul class="component-nav">
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./avatar.html">
+                    Avatar
+                  </a>
+                </li>
+                <li class="side-nav-link active my-1 mx-1 px-2 py-05">
+                  <a href="alert.html">
+                    Alert
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./badge.html">
+                    Badge
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./button.html">
+                    Button
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./card.html">
+                    Card
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./image.html">
+                    Image
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./input.html">
+                    Input
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./navigation.html">
+                    Navigation
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./toast.html">
+                    Toast
+                  </a>
+                </li>
+                <li class="side-nav-link my-1 mx-1 px-2 py-05">
+                  <a href="./typography.html">
+                    Typography
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- main content -->
+        <div class="doc-content m-2">
+          <h1 class="mb-2">Alert</h1>
+          <div>
+            <p>
+              An alert displays a short, important message in a way that
+              attracts the user's attention without interrupting the user's
+              task. Alerting makes it possible for people to keep up with the
+              information that matters most to them.
+            </p>
+          </div>
+
+          <!--Simple Alert-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Simple Alert</h3>
+            <div>
+              <p>
+                For simple alert with short message, use class alert with
+                alert-variant. AceUI provides four alert variants - info,
+                success, warning and error. Refer examples below to use alert in
+                your project.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <div class="alert alert-info my-05">
+                This is a info alert—check it out!
+              </div>
+              <div class="alert alert-success my-05">
+                This is a success alert—check it out!
+              </div>
+              <div class="alert alert-warning my-05">
+                This is a warning alert—check it out!
+              </div>
+              <div class="alert alert-error my-05">
+                This is a danger alert—check it out!
+              </div>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/826fd9d106fddc6b42be398cec77ddd2.js"></script>
+            </div>
+          </section>
+
+          <!--Alert with icon-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Alert with Icon</h3>
+            <div>
+              <p>
+                Use classes alert & alert-icon to create alert with icons. Refer
+                the example given below.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <div class="alert alert-info alert-icon my-05">
+                <img class="icon" src="../assets/images/alert/info.png" />
+                <span>This is a info alert—check it out!</span>
+              </div>
+              <div class="alert alert-success alert-icon my-05">
+                <img class="icon" src="../assets/images/alert/success.png" />
+                <span>This is a success alert—check it out!</span>
+              </div>
+              <div class="alert alert-warning alert-icon my-05">
+                <img class="icon" src="../assets/images/alert/warning.png" />
+                <span>This is a warning alert—check it out!</span>
+              </div>
+              <div class="alert alert-error alert-icon my-05">
+                <img class="icon" src="../assets/images/alert/error.png" />
+                <span>This is a danger alert—check it out!</span>
+              </div>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/049326a383d1b1fffaf3ed63b3dbc125.js"></script>
+            </div>
+          </section>
+
+          <!--Alert with dismiss-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Alert with Dismiss</h3>
+            <div>
+              <p>
+                Alert with dismiss have close button which allow users to close/
+                remove the alert.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <div class="alert alert-info alert-dismiss my-05">
+                <span>This is a info alert—check it out!</span>
+                <img class="close" src="../assets/images/alert/cancel.png" />
+              </div>
+              <div class="alert alert-success alert-icon alert-dismiss my-05">
+                <img class="icon" src="../assets/images/alert/success.png" />
+                <span>This is a success alert—check it out!</span>
+                <img class="close" src="../assets/images/alert/cancel.png" />
+              </div>
+              <div class="alert alert-warning alert-dismiss my-05">
+                <span>This is a warning alert—check it out!</span>
+                <img class="close" src="../assets/images/alert/cancel.png" />
+              </div>
+              <div class="alert alert-error alert-dismiss my-05">
+                <span>This is a danger alert—check it out!</span>
+                <img class="close" src="../assets/images/alert/cancel.png" />
+              </div>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/724c1c95720dcb74b2787230f815aaed.js"></script>
+            </div>
+          </section>
+
+          <!--Alert Dark-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Alert Color - Dark</h3>
+            <div>
+              <p>
+                To make alerts of darker color use class alert-dark.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <div class="alert alert-info alert-dark my-05">
+                This is a info alert—check it out!
+              </div>
+              <div class="alert alert-success alert-icon alert-dark my-05">
+                <img class="icon" src="../assets/images/alert/success.png" />
+                <span>This is a success alert—check it out!</span>
+              </div>
+              <div class="alert alert-warning alert-dark my-05">
+                This is a warning alert—check it out!
+              </div>
+              <div class="alert alert-error alert-dark my-05">
+                This is a danger alert—check it out!
+              </div>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/ad5605dd0d2e21b20a102df9961d9b05.js"></script>
+            </div>
+          </section>
+
+          <!--Alert Light-->
+
+          <section class="doc-section">
+            <h3 class="mb-1">Alert Color - Light</h3>
+            <div>
+              <p>
+                To make alerts of lighter color use class alert-light.
+              </p>
+            </div>
+            <div class="component-container my-2 p-2">
+              <div class="alert alert-info alert-light my-05">
+                This is a info alert—check it out!
+              </div>
+              <div class="alert alert-success alert-icon alert-light my-05">
+                <img class="icon" src="../assets/images/alert/success.png" />
+                <span>This is a success alert—check it out!</span>
+              </div>
+              <div class="alert alert-warning alert-light my-05">
+                This is a warning alert—check it out!
+              </div>
+              <div class="alert alert-error alert-light my-05">
+                This is a danger alert—check it out!
+              </div>
+            </div>
+            <div class="code-container">
+              <script src="https://gist.github.com/Ayesha-7/ffe91cf186e3d8afb31b3d43d9c6f276.js"></script>
+            </div>
+          </section>
         </div>
+      </main>
+      <!------ Footer ------>
 
-        <!--Simple Alert-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Simple Alert</h3>
-          <div>
-            <p>
-              For simple alert with short message, use class alert with
-              alert-variant. AceUI provides four alert variants - info, success,
-              warning and error. Refer examples below to use alert in your
-              project.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <div class="alert alert-info my-05">
-              This is a info alert—check it out!
-            </div>
-            <div class="alert alert-success my-05">
-              This is a success alert—check it out!
-            </div>
-            <div class="alert alert-warning my-05">
-              This is a warning alert—check it out!
-            </div>
-            <div class="alert alert-error my-05">
-              This is a danger alert—check it out!
-            </div>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/826fd9d106fddc6b42be398cec77ddd2.js"></script>
-          </div>
-        </section>
-
-        <!--Alert with icon-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Alert with Icon</h3>
-          <div>
-            <p>
-              Use classes alert & alert-icon to create alert with icons. Refer
-              the example given below.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <div class="alert alert-info alert-icon my-05">
-              <img class="icon" src="../assets/images/alert/info.png" />
-              <span>This is a info alert—check it out!</span>
-            </div>
-            <div class="alert alert-success alert-icon my-05">
-              <img class="icon" src="../assets/images/alert/success.png" />
-              <span>This is a success alert—check it out!</span>
-            </div>
-            <div class="alert alert-warning alert-icon my-05">
-              <img class="icon" src="../assets/images/alert/warning.png" />
-              <span>This is a warning alert—check it out!</span>
-            </div>
-            <div class="alert alert-error alert-icon my-05">
-              <img class="icon" src="../assets/images/alert/error.png" />
-              <span>This is a danger alert—check it out!</span>
-            </div>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/049326a383d1b1fffaf3ed63b3dbc125.js"></script>
-          </div>
-        </section>
-
-        <!--Alert with dismiss-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Alert with Dismiss</h3>
-          <div>
-            <p>
-              Alert with dismiss have close button which allow users to close/
-              remove the alert.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <div class="alert alert-info alert-dismiss my-05">
-              <span>This is a info alert—check it out!</span>
-              <img class="close" src="../assets/images/alert/cancel.png" />
-            </div>
-            <div class="alert alert-success alert-icon alert-dismiss my-05">
-              <img class="icon" src="../assets/images/alert/success.png" />
-              <span>This is a success alert—check it out!</span>
-              <img class="close" src="../assets/images/alert/cancel.png" />
-            </div>
-            <div class="alert alert-warning alert-dismiss my-05">
-              <span>This is a warning alert—check it out!</span>
-              <img class="close" src="../assets/images/alert/cancel.png" />
-            </div>
-            <div class="alert alert-error alert-dismiss my-05">
-              <span>This is a danger alert—check it out!</span>
-              <img class="close" src="../assets/images/alert/cancel.png" />
-            </div>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/724c1c95720dcb74b2787230f815aaed.js"></script>
-          </div>
-        </section>
-
-        <!--Alert Dark-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Alert Color - Dark</h3>
-          <div>
-            <p>
-              To make alerts of darker color use class alert-dark.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <div class="alert alert-info alert-dark my-05">
-              This is a info alert—check it out!
-            </div>
-            <div class="alert alert-success alert-icon alert-dark my-05">
-              <img class="icon" src="../assets/images/alert/success.png" />
-              <span>This is a success alert—check it out!</span>
-            </div>
-            <div class="alert alert-warning alert-dark my-05">
-              This is a warning alert—check it out!
-            </div>
-            <div class="alert alert-error alert-dark my-05">
-              This is a danger alert—check it out!
-            </div>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/ad5605dd0d2e21b20a102df9961d9b05.js"></script>
-          </div>
-        </section>
-
-        <!--Alert Light-->
-
-        <section class="doc-section">
-          <h3 class="mb-1">Alert Color - Light</h3>
-          <div>
-            <p>
-              To make alerts of lighter color use class alert-light.
-            </p>
-          </div>
-          <div class="component-container my-2 p-2">
-            <div class="alert alert-info alert-light my-05">
-              This is a info alert—check it out!
-            </div>
-            <div class="alert alert-success alert-icon alert-light my-05">
-              <img class="icon" src="../assets/images/alert/success.png" />
-              <span>This is a success alert—check it out!</span>
-            </div>
-            <div class="alert alert-warning alert-light my-05">
-              This is a warning alert—check it out!
-            </div>
-            <div class="alert alert-error alert-light my-05">
-              This is a danger alert—check it out!
-            </div>
-          </div>
-          <div class="code-container">
-            <script src="https://gist.github.com/Ayesha-7/ffe91cf186e3d8afb31b3d43d9c6f276.js"></script>
-          </div>
-        </section>
-      </div>
-    </main>
-    <!------ Footer ------>
-
-    <footer class="footer-container flex-column">
-      <div class="footer-social mx-05 mt-05">
-        <ul class="footer-social-links flex-row">
-          <li>
-            <a href="https://github.com/Ayesha-7/" target="_blank">
-              <i class="fa fa-github fa-1 mx-1"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/ayeshashaikh7/"
-              target="_blank"
-            >
-              <i class="fa fa-linkedin fa-1 mx-1"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/_ayesha_7" target="_blank">
-              <i class="fa fa-twitter fa-1 mx-1"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="m-05">
-        <h6>© | Made with 💛 by Ayesha | 2022</h6>
-      </div>
-    </footer>
+      <footer class="footer-container flex-column">
+        <div class="footer-social mx-05 mt-05">
+          <ul class="footer-social-links flex-row">
+            <li>
+              <a href="https://github.com/Ayesha-7/" target="_blank">
+                <i class="fa fa-github fa-1 mx-1"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ayeshashaikh7/"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin fa-1 mx-1"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/_ayesha_7" target="_blank">
+                <i class="fa fa-twitter fa-1 mx-1"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="m-05">
+          <h6>© | Made with 💛 by Ayesha | 2022</h6>
+        </div>
+      </footer>
+    </section>
+    <script src="../Scripts/mobile-navigation.js"></script>
   </body>
 </html>

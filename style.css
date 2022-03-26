@@ -1,5 +1,6 @@
 @import url(../Styles/common.css);
 @import url(../Styles/Components/button.css);
+@import url(../Styles/Components/image.css);
 
 body {
   min-height: 100vh;
@@ -18,8 +19,15 @@ body {
   display: flex;
 }
 
+.main-nav-link a:hover {
+  color: var(--primary-color);
+}
+
+.main-nav-link a .active {
+  color: var(--primary-color);
+}
 .main-container {
-  height: 72vh;
+  height: max-content;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -30,11 +38,11 @@ body {
 }
 
 .hero-text-container {
-  width: 32vw;
+  width: 30rem;
 }
 
-.feature-img {
-  width: 32vw;
+.hero-image-container {
+  width: 30rem;
   height: auto;
 }
 
@@ -45,4 +53,22 @@ body {
 
 .btn {
   box-shadow: rgb(0 0 0 / 28%) 0px 4px 10px;
+}
+
+@media screen and (max-width: 468px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .main-section {
+    flex-direction: column;
+    max-width: 80vw;
+  }
+  .hero-text-container,
+  .hero-image-container {
+    max-width: inherit;
+    text-align: center;
+  }
 }

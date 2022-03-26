@@ -21,6 +21,14 @@ body {
   display: flex;
 }
 
+.main-nav-link a:hover {
+  color: var(--primary-color);
+}
+
+.main-nav-link .active {
+  color: var(--primary-color);
+}
+
 .body-container {
   margin: 0 4rem;
   width: 90vw;
@@ -34,6 +42,7 @@ body {
   min-width: 19rem;
   width: 18%;
   position: fixed;
+  margin-top: 2rem;
 }
 
 .main-side-nav h6 {
@@ -58,7 +67,10 @@ body {
   padding-left: 24px;
   font-weight: bold;
 }
-
+.component-nav {
+  height: 50vh;
+  overflow: scroll;
+}
 .doc-content {
   min-width: 32rem;
   width: 70%;
@@ -66,7 +78,7 @@ body {
 }
 
 .doc-section {
-  margin-top: 4rem;
+  margin: 4rem 0;
 }
 
 .component-container {
@@ -94,4 +106,97 @@ body {
 
 .code-container .gist .gist-file {
   margin-bottom: 0;
+}
+
+/* Small Screens */
+.sub-header {
+  background-color: var(--black-6);
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  margin: 4rem auto;
+}
+
+.sub-header .menu-btn {
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.sub-header h5 {
+  letter-spacing: normal;
+}
+
+.sub-header .menu-btn:hover {
+  cursor: pointer;
+}
+
+.mobile-nav {
+  margin-top: 8rem;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+.mobile-nav h6 {
+  border-bottom: 1px solid var(--black-5);
+  line-height: 0;
+  font-size: 1.5rem;
+}
+
+.mobile-nav .side-nav-link:hover,
+.mobile-nav .side-nav-link.active {
+  background: var(--blue-6);
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.mobile-nav .side-nav-link > a:hover {
+  cursor: pointer;
+}
+.sub-header {
+  display: none;
+}
+.mobile-menu-wrapper {
+  display: none;
+}
+.body-content-wrapper {
+  display: block;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 14px;
+  }
+  .doc-content {
+    margin-left: 16rem;
+  }
+  .main-side-nav {
+    min-width: 16rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .doc-content {
+    margin: 6rem 2rem auto;
+    width: 90%;
+    min-width: 16rem;
+  }
+  .main-side-nav {
+    display: none;
+  }
+  .sub-header {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  html {
+    font-size: 12px;
+  }
 }
