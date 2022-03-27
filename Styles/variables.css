@@ -1,6 +1,8 @@
 :root {
   --primary-color: #2667ff;
   --bg-primary: #ffffff;
+  --text-color-1: #000000d9;
+  --text-color-2: #ffffff;
   --bg-secondary: #f4f7f6;
 
   /* variables for margin, padding, spaces */

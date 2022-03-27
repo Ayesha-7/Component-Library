@@ -69,6 +69,7 @@
 }
 
 .btn-secondary {
+  background: #ffffff;
   color: var(--black-3);
   border-radius: 8px;
   box-shadow: rgb(0 0 0 / 28%) 0px 4px 10px;
