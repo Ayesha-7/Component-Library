@@ -10,7 +10,7 @@
 .btn-primary,
 .btn-link-solid {
   background-color: var(--primary-color);
-  color: var(--bg-primary);
+  color: var(--white-color);
   font-weight: 500;
   border-radius: 8px;
 }
@@ -19,7 +19,7 @@
   box-sizing: border-box;
   color: var(--black-3);
   border: var(--black-3) 1px solid;
-  background: var(--bg-primary);
+  background: var(--white-color);
   font-weight: 500;
   border-radius: 8px;
 }
@@ -42,7 +42,7 @@
   justify-content: space-between;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
-  color: var(--bg-primary);
+  color: var(--white-color);
 }
 
 .btn-icon-label div {
@@ -69,6 +69,7 @@
 }
 
 .btn-secondary {
+  background: var(--white-color);
   color: var(--black-3);
   border-radius: 8px;
   box-shadow: rgb(0 0 0 / 28%) 0px 4px 10px;

@@ -15,7 +15,7 @@
 
 .card {
   color: var(--black-1);
-  background: var(--bg-primary);
+  background: var(--white-color);
   padding: var(--sp-1);
   width: 100%;
   border-radius: 4px;
@@ -24,6 +24,7 @@
 .card,
 .card-product {
   position: relative;
+  background: var(--white-color);
 }
 
 .card .card-title {
@@ -32,7 +33,7 @@
 
 .card-vertical {
   color: var(--black-1);
-  background: var(--bg-primary);
+  background: var(--white-color);
   width: 100%;
   border-radius: 4px;
 }
@@ -42,7 +43,7 @@
   align-items: center;
   justify-content: space-around;
   color: var(--black-1);
-  background: var(--bg-primary);
+  background: var(--white-color);
   padding: var(--sp-1);
   width: 100%;
   border-radius: 4px;
@@ -162,7 +163,7 @@
 
 .card-overlay > div {
   background: var(--black-3);
-  color: var(--bg-primary);
+  color: var(--white-color);
   font-size: 1.4rem;
   font-weight: 500;
   padding: 0.5rem;
@@ -183,4 +184,16 @@
 
 .card-shadow:hover {
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+  .card-vertical-container {
+    width: 50%;
+    margin: 1rem;
+  }
+
+  .card-horizontal-container {
+    width: 90%;
+    margin: 1rem;
+  }
 }

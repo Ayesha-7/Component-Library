@@ -7,6 +7,8 @@ body {
   margin: 0;
   padding: 0;
   justify-content: space-between;
+  background: var(--bg-primary);
+  color: var(--text-color-1);
 }
 
 .main-header {
@@ -17,6 +19,7 @@ body {
 
 .main-nav-links {
   display: flex;
+  align-items: center;
 }
 
 .main-nav-link a:hover {
@@ -26,6 +29,7 @@ body {
 .main-nav-link a .active {
   color: var(--primary-color);
 }
+
 .main-container {
   height: max-content;
   align-items: center;
@@ -48,7 +52,12 @@ body {
 
 .footer-container {
   background: var(--black-6);
+  color: var(--black-1);
   align-items: center;
+}
+
+.footer-container a {
+  color: var(--black-1);
 }
 
 .btn {
@@ -72,3 +81,19 @@ body {
     text-align: center;
   }
 }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #000000d9;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000d9;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-primary: #ffffff;
+    --text-color-1: #000000d9;
+    --text-color-2: #ffffff;
+  }
+} */
