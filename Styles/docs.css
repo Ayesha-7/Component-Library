@@ -9,6 +9,7 @@ body {
 
 .main-header {
   background-color: var(--bg-primary);
+  color: var(--text-color-1);
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 4px 4px rgb(40 44 51 / 20%);
@@ -19,6 +20,7 @@ body {
 
 .main-nav-links {
   display: flex;
+  align-items: center;
 }
 
 .main-nav-link a:hover {
@@ -55,12 +57,16 @@ body {
   border-radius: 6px;
   padding-left: 24px;
   font-weight: bold;
+  color: var(--black-1);
 }
 
 .side-nav-link > a:hover {
   cursor: pointer;
+  color: var(--black-1);
 }
-
+.side-nav-link.active > a {
+  color: var(--black-1);
+}
 .side-nav-link.active {
   background: var(--blue-5);
   border-radius: 6px;
@@ -83,6 +89,7 @@ body {
 
 .component-container {
   background-color: var(--black-6);
+  color: var(--black-1);
   border-radius: 8px;
   display: flex;
   flex-flow: row wrap;
@@ -99,9 +106,14 @@ body {
 
 .footer-container {
   background: var(--black-6);
+  color: var(--black-1);
   align-items: center;
   box-shadow: 0px -4px 4px rgb(40 44 51 / 20%);
   z-index: 1;
+}
+
+.footer-container a {
+  color: var(--black-1);
 }
 
 .code-container .gist .gist-file {
@@ -111,6 +123,7 @@ body {
 /* Small Screens */
 .sub-header {
   background-color: var(--black-6);
+  color: var(--black-1);
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -150,6 +163,7 @@ body {
 .mobile-nav .side-nav-link:hover,
 .mobile-nav .side-nav-link.active {
   background: var(--blue-6);
+  color: var(--black-1);
   border-radius: 6px;
   font-weight: bold;
 }
@@ -157,6 +171,7 @@ body {
 .mobile-nav .side-nav-link > a:hover {
   cursor: pointer;
 }
+
 .sub-header {
   display: none;
 }
@@ -200,3 +215,19 @@ body {
     font-size: 12px;
   }
 }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #000000d9;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000d9;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-primary: #ffffff;
+    --text-color-1: #000000d9;
+    --text-color-2: #ffffff;
+  }
+} */
