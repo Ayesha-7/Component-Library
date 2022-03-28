@@ -1,27 +1,37 @@
-// const themeButton = document.querySelector("#theme-btn");
+const themeButton = document.querySelector("#theme-btn");
 
-// themeButton.addEventListener("click", ()=>{
-//   if(window.localStorage.getItem("theme"))
-// })
+window.onload = () => {
+  changeTheme();
+};
 
-// themeButton.addEventListener("click", () => {
-//   if (window.localStorage.getItem("darkMode")) {
-//     let darkMode = JSON.parse(window.localStorage.getItem("darkMode"));
-//     window.localStorage.setItem("darkMode", JSON.stringify(!darkMode));
-//   } else {
-//     window.localStorage.setItem("darkMode", true);
-//   }
-//   changeMode();
-// });
+themeButton.addEventListener("click", () => {
+  if (window.localStorage.getItem("darkMode")) {
+    let darkMode = JSON.parse(window.localStorage.getItem("darkMode"));
+    window.localStorage.setItem("darkMode", JSON.stringify(!darkMode));
+  } else {
+    window.localStorage.setItem("darkMode", true);
+  }
+  changeTheme();
+});
 
-// const changeMode = () => {
-//   if (JSON.parse(localStorage.getItem("darkMode"))) {
-//     document.documentElement.style.setProperty("--white", "#313335");
-//     document.documentElement.style.setProperty("--black", "#FEFEFF");
-//     modeBtn.childNodes[0].src = "/Assets/sun.png";
-//   } else {
-//     document.documentElement.style.setProperty("--white", "#FEFEFF");
-//     document.documentElement.style.setProperty("--black", "#1A181B");
-//     modeBtn.childNodes[0].src = "/Assets/moon.png";
-//   }
-// };
+const changeTheme = () => {
+  if (JSON.parse(window.localStorage.getItem("darkMode"))) {
+    darkTheme();
+  } else {
+    lightTheme();
+  }
+};
+
+const lightTheme = () => {
+  document.documentElement.style.setProperty("--bg-primary", "#ffffff");
+  document.documentElement.style.setProperty("--text-color-1", "#1f1f1f");
+  document.documentElement.style.setProperty("--text-color-2", "#ffffff");
+  themeButton.innerText = "🌜";
+};
+
+const darkTheme = () => {
+  document.documentElement.style.setProperty("--bg-primary", "#1f1f1f");
+  document.documentElement.style.setProperty("--text-color-1", "#ffffff");
+  document.documentElement.style.setProperty("--text-color-2", "#1f1f1f");
+  themeButton.innerText = "🌞";
+};

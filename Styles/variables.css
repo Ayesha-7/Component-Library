@@ -1,9 +1,10 @@
 :root {
   --primary-color: #2667ff;
   --bg-primary: #ffffff;
-  --text-color-1: #000000d9;
+  --text-color-1: #1f1f1f;
   --text-color-2: #ffffff;
   --bg-secondary: #f4f7f6;
+  --white-color: #ffffff;
 
   /* variables for margin, padding, spaces */
   --sp-025: 0.25rem;
@@ -16,7 +17,7 @@
   /* color variants 1-darkest 6-lightest */
 
   /* black color variants */
-  --black-1: #000000d9;
+  --black-1: #1f1f1f;
   --black-2: #4b5563;
   --black-3: #6b7280;
   --black-4: #9ca3af;
@@ -30,15 +31,6 @@
   --blue-4: #91d5ff;
   --blue-5: #bae7ff;
   --blue-6: #e6f7ff;
-  /* --blue-5: #0084ff34; */
-
-  /* will clean it later if not used */
-  /* --blue-1: #1890ff;
-  --blue-2: #40a9ff;
-  --blue-3: #69c0ff;
-  --blue-4: #91d5ff;
-  --blue-5: #bae7ff;
-  --blue-6: #e6f7ff; */
 
   /* red color */
   --red-1: #f5222d;

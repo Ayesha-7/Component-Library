@@ -20,6 +20,7 @@ body {
 
 .main-nav-links {
   display: flex;
+  align-items: center;
 }
 
 .main-nav-link a:hover {
@@ -162,6 +163,7 @@ body {
 .mobile-nav .side-nav-link:hover,
 .mobile-nav .side-nav-link.active {
   background: var(--blue-6);
+  color: var(--black-1);
   border-radius: 6px;
   font-weight: bold;
 }
@@ -169,6 +171,7 @@ body {
 .mobile-nav .side-nav-link > a:hover {
   cursor: pointer;
 }
+
 .sub-header {
   display: none;
 }
@@ -213,7 +216,7 @@ body {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --bg-primary: #000000d9;
     --text-color-1: #ffffff;
@@ -227,4 +230,4 @@ body {
     --text-color-1: #000000d9;
     --text-color-2: #ffffff;
   }
-}
+} */
