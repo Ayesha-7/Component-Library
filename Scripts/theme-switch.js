@@ -4,7 +4,8 @@ window.onload = () => {
   changeTheme();
 };
 
-themeButton.addEventListener("click", () => {
+themeButton.addEventListener("click", (event) => {
+  event.preventDefault();
   if (window.localStorage.getItem("darkMode")) {
     let darkMode = JSON.parse(window.localStorage.getItem("darkMode"));
     window.localStorage.setItem("darkMode", JSON.stringify(!darkMode));
